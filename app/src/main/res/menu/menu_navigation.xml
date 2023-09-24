@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+
+      <item
+            android:id="@+id/refid"
+            android:title="Home"
+            />
+        <!-- <item
+           android:id="@+id/refid"
+           android:title="Home"
+           android:icon="@mipmap/ic_action_search"
+           />-->
+        <item
+            android:id="@+id/myaccount"
+            android:title="Task"/>
+
+        <item
+            android:id="@+id/connections"
+            android:title="Walkins"
+            />
+
+        <item
+            android:id="@+id/askconnections"
+            android:title="Create"
+            />
+
+
+
+        <item
+            android:id="@+id/logout"
+            android:title="Logout"
+            />
+
+    </group>
+</menu>

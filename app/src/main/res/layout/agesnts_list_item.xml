@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/agentRLID"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        tools:ignore="UnusedAttribute">
+
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/_8ssp"
+                android:paddingTop="@dimen/_2sdp"
+                android:paddingEnd="@dimen/_8ssp"
+                android:paddingBottom="@dimen/_2sdp">
+
+                <TextView
+                    android:id="@+id/agentNameTVID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:maxLines="1"
+                    android:text="Customer Name"
+                    android:textColor="#767575"
+                    android:textSize="@dimen/_12ssp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/agentMobileTVID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="Customer Name"
+                    android:textColor="#8E8C8C"
+                    android:textSize="@dimen/_9ssp"
+                    tools:ignore="HardcodedText" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/msgRLID"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:alpha="0.6"
+                    android:elevation="@dimen/_5sdp"
+                    android:gravity="center"
+                    tools:ignore="UnusedAttribute">
+
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/_message"
+                        android:contentDescription="@string/app_name" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/whatsappRLID"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:elevation="@dimen/_5sdp"
+                    android:gravity="center"
+                    tools:ignore="UnusedAttribute">
+
+                    <ImageView
+                        android:layout_width="@dimen/_22sdp"
+                        android:layout_height="@dimen/_22sdp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/whatsappicon"
+                        android:contentDescription="@string/app_name" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/phnRLID"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:elevation="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:paddingEnd="@dimen/_5sdp"
+                    tools:ignore="RtlSymmetry,UselessParent">
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/bg_phone_circle_1">
+
+                        <ImageView
+                            android:layout_width="@dimen/_10sdp"
+                            android:layout_height="@dimen/_10sdp"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/_phone"
+                            android:backgroundTint="@color/white"
+                            android:contentDescription="@string/app_name" />
+
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="#b4b4b4"
+            android:visibility="visible" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

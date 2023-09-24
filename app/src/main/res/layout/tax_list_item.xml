@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/listItem"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_28sdp"
+        android:clickable="true"
+        android:foreground="?android:selectableItemBackground"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        tools:ignore="DisableBaselineAlignment,KeyboardInaccessibleWidget,UnusedAttribute,UselessParent">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0.8"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/monthTVID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="center"
+                android:text="Month"
+                android:textColor="@color/edit_4"
+                android:textSize="@dimen/_10ssp"
+                android:textStyle="normal"
+                android:paddingStart="@dimen/_4sdp"
+                android:paddingEnd="@dimen/_1sdp"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0.8"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/taxRTVID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="center"
+                android:text="Tax"
+                android:textColor="@color/edit_4"
+                android:textSize="@dimen/_10ssp"
+                android:textStyle="normal"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0.8"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/taxPTVID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="center"
+                android:text="Tax \n Paid"
+                android:textColor="@color/edit_4"
+                android:textSize="@dimen/_10ssp"
+                android:textStyle="normal"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0.8"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/payableTVID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="center"
+                android:text="Rs.10000"
+                android:textColor="@color/edit_4"
+                android:textSize="@dimen/_10ssp"
+                android:textStyle="normal"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0.8"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/paidTVID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="center"
+                android:text="Paid"
+                android:textColor="@color/edit_4"
+                android:textSize="@dimen/_10ssp"
+                android:textStyle="normal"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0.6"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_box_n"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="center"
+                android:padding="@dimen/_2sdp"
+                android:text="Make Payment"
+                android:textColor="@color/edit_7"
+                android:textSize="@dimen/_8ssp"
+                android:textStyle="normal"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/edit_b" />
+
+</LinearLayout>

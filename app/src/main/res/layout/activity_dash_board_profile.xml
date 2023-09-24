@@ -1,0 +1,1327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.activities.dashboard.DashBoardProfileActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <include layout="@layout/header_attendance" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_10sdp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/profileRLID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_20sdp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            app:cardCornerRadius="@dimen/_8sdp"
+                            app:cardElevation="@dimen/_2sdp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/userNameTVID"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="@dimen/_40sdp"
+                                    android:fontFamily="@font/roboto_medium"
+                                    android:text="User name"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_13ssp"
+                                    tools:ignore="HardcodedText" />
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/designationTVID"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/userNameTVID"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="@dimen/_3sdp"
+                                    android:fontFamily="@font/roboto_medium"
+                                    android:text="Designation"
+                                    android:textColor="@color/textColor"
+                                    android:textSize="@dimen/_11ssp"
+                                    tools:ignore="HardcodedText" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/designationTVID"
+                                    android:layout_marginStart="@dimen/_10sdp"
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:layout_marginEnd="@dimen/_10sdp"
+                                    android:layout_marginBottom="@dimen/_10sdp"
+                                    android:background="@drawable/bg_dashborad_info"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/_30sdp"
+                                        android:background="@drawable/bg_dashborad_info_header"
+                                        android:orientation="horizontal"
+                                        android:weightSum="2">
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:gravity="center_vertical">
+
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginStart="@dimen/_5sdp"
+                                                android:fontFamily="@font/roboto_regular"
+                                                android:text="Performance"
+                                                android:textColor="@color/white"
+                                                android:textSize="@dimen/_11ssp"
+                                                tools:ignore="HardcodedText,TooDeepLayout" />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.3"
+                                            android:gravity="center_vertical">
+
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginStart="@dimen/_5sdp"
+                                                android:fontFamily="@font/roboto_regular"
+                                                android:text="Day"
+                                                android:textColor="@color/white"
+                                                android:textSize="@dimen/_11ssp"
+                                                tools:ignore="HardcodedText,TooDeepLayout" />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.3"
+                                            android:gravity="center_vertical">
+
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginStart="@dimen/_5sdp"
+                                                android:fontFamily="@font/roboto_regular"
+                                                android:text="Month"
+                                                android:textColor="@color/white"
+                                                android:textSize="@dimen/_11ssp"
+                                                tools:ignore="HardcodedText,TooDeepLayout" />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.4"
+                                            android:gravity="center_vertical">
+
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginStart="@dimen/_5sdp"
+                                                android:fontFamily="@font/roboto_regular"
+                                                android:text="Overall"
+                                                android:textColor="@color/white"
+                                                android:textSize="@dimen/_11ssp"
+                                                tools:ignore="HardcodedText,TooDeepLayout" />
+
+                                        </LinearLayout>
+
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/_28sdp"
+                                        android:orientation="horizontal"
+                                        android:weightSum="2">
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:gravity="center_vertical">
+
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginStart="@dimen/_5sdp"
+                                                android:fontFamily="@font/roboto_regular"
+                                                android:text="Dialed Calls"
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/_11ssp"
+                                                tools:ignore="HardcodedText,TooDeepLayout" />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.3"
+                                            android:gravity="center_vertical">
+
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:id="@+id/dayDialedCallsTVID"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginStart="@dimen/_5sdp"
+                                                android:fontFamily="@font/roboto_regular"
+
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/_11ssp"
+                                                tools:ignore="HardcodedText,TooDeepLayout" />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.3"
+                                            android:gravity="center_vertical">
+
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:id="@+id/monthDialedCallsTVID"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginStart="@dimen/_5sdp"
+                                                android:fontFamily="@font/roboto_regular"
+
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/_11ssp"
+                                                tools:ignore="HardcodedText,TooDeepLayout" />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.3"
+                                            android:gravity="center_vertical">
+
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:id="@+id/overallDialedCallsTVID"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginStart="@dimen/_5sdp"
+                                                android:fontFamily="@font/roboto_regular"
+
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/_11ssp"
+                                                tools:ignore="HardcodedText,TooDeepLayout" />
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0.7dp"
+                                        android:layout_marginStart="@dimen/_3sdp"
+                                        android:layout_marginEnd="@dimen/_3sdp"
+                                        android:background="@color/edit_b" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/_28sdp"
+                                        android:orientation="horizontal"
+                                        android:weightSum="2">
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:gravity="center_vertical">
+
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginStart="@dimen/_5sdp"
+                                                android:fontFamily="@font/roboto_regular"
+                                                android:text="Spoken Calls"
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/_11ssp"
+                                                tools:ignore="HardcodedText,TooDeepLayout" />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.3"
+                                            android:gravity="center_vertical">
+
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:id="@+id/daySpokenCallsTVID"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginStart="@dimen/_5sdp"
+                                                android:fontFamily="@font/roboto_regular"
+
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/_11ssp"
+                                                tools:ignore="HardcodedText,TooDeepLayout" />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.3"
+                                            android:gravity="center_vertical">
+
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:id="@+id/monthSpokenCallsTVID"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginStart="@dimen/_5sdp"
+                                                android:fontFamily="@font/roboto_regular"
+
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/_11ssp"
+                                                tools:ignore="HardcodedText,TooDeepLayout" />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.3"
+                                            android:gravity="center_vertical">
+
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:id="@+id/overallSpokenCallsTVID"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginStart="@dimen/_5sdp"
+                                                android:fontFamily="@font/roboto_regular"
+
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/_11ssp"
+                                                tools:ignore="HardcodedText,TooDeepLayout" />
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0.7dp"
+                                        android:layout_marginStart="@dimen/_3sdp"
+                                        android:layout_marginEnd="@dimen/_3sdp"
+                                        android:background="@color/edit_b" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/_28sdp"
+                                        android:orientation="horizontal"
+                                        android:weightSum="2">
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:gravity="center_vertical">
+
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginStart="@dimen/_5sdp"
+                                                android:fontFamily="@font/roboto_regular"
+                                                android:text="Talk Time"
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/_11ssp"
+                                                tools:ignore="HardcodedText,TooDeepLayout" />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.3"
+                                            android:gravity="center_vertical">
+
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:id="@+id/dayTalkTimeTVID"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginStart="@dimen/_5sdp"
+                                                android:fontFamily="@font/roboto_regular"
+
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/_11ssp"
+                                                tools:ignore="HardcodedText,TooDeepLayout" />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.3"
+                                            android:gravity="center_vertical">
+
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:id="@+id/monthTalkTimeTVID"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginStart="@dimen/_5sdp"
+                                                android:fontFamily="@font/roboto_regular"
+
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/_11ssp"
+                                                tools:ignore="HardcodedText,TooDeepLayout" />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.3"
+                                            android:gravity="center_vertical">
+
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:id="@+id/overallTalkTimeTVID"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginStart="@dimen/_5sdp"
+                                                android:fontFamily="@font/roboto_regular"
+
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/_11ssp"
+                                                tools:ignore="HardcodedText,TooDeepLayout" />
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0.7dp"
+                                        android:layout_marginStart="@dimen/_3sdp"
+                                        android:layout_marginEnd="@dimen/_3sdp"
+                                        android:background="@color/edit_b" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/_28sdp"
+                                        android:orientation="horizontal"
+                                        android:weightSum="2">
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:gravity="center_vertical">
+
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginStart="@dimen/_5sdp"
+                                                android:fontFamily="@font/roboto_regular"
+                                                android:text="Customer Meet Created"
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/_11ssp"
+                                                tools:ignore="HardcodedText,TooDeepLayout" />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.3"
+                                            android:gravity="center_vertical">
+
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:id="@+id/dayCustomerMeetTVID"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginStart="@dimen/_5sdp"
+                                                android:fontFamily="@font/roboto_regular"
+
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/_11ssp"
+                                                tools:ignore="HardcodedText,TooDeepLayout" />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.3"
+                                            android:gravity="center_vertical">
+
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:id="@+id/monthCustomerMeetTVID"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginStart="@dimen/_5sdp"
+                                                android:fontFamily="@font/roboto_regular"
+
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/_11ssp"
+                                                tools:ignore="HardcodedText,TooDeepLayout" />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.3"
+                                            android:gravity="center_vertical">
+
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:id="@+id/overallCustomerMeetTVID"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginStart="@dimen/_5sdp"
+                                                android:fontFamily="@font/roboto_regular"
+
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/_11ssp"
+                                                tools:ignore="HardcodedText,TooDeepLayout" />
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0.7dp"
+                                        android:layout_marginStart="@dimen/_3sdp"
+                                        android:layout_marginEnd="@dimen/_3sdp"
+                                        android:background="@color/edit_b" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/_28sdp"
+                                        android:orientation="horizontal"
+                                        android:weightSum="2">
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:gravity="center_vertical">
+
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginStart="@dimen/_5sdp"
+                                                android:fontFamily="@font/roboto_regular"
+                                                android:text="New Enquiries"
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/_11ssp"
+                                                tools:ignore="HardcodedText,TooDeepLayout" />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.3"
+                                            android:gravity="center_vertical">
+
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:id="@+id/dayNewEnquiriesTVID"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginStart="@dimen/_5sdp"
+                                                android:fontFamily="@font/roboto_regular"
+
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/_11ssp"
+                                                tools:ignore="HardcodedText,TooDeepLayout" />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.3"
+                                            android:gravity="center_vertical">
+
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:id="@+id/monthNewEnquiriesTVID"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginStart="@dimen/_5sdp"
+                                                android:fontFamily="@font/roboto_regular"
+
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/_11ssp"
+                                                tools:ignore="HardcodedText,TooDeepLayout" />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.3"
+                                            android:gravity="center_vertical">
+
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:id="@+id/overallNewEnquiriesTVID"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginStart="@dimen/_5sdp"
+                                                android:fontFamily="@font/roboto_regular"
+
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/_11ssp"
+                                                tools:ignore="HardcodedText,TooDeepLayout" />
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0.7dp"
+                                        android:layout_marginStart="@dimen/_3sdp"
+                                        android:layout_marginEnd="@dimen/_3sdp"
+                                        android:background="@color/edit_b" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/_28sdp"
+                                        android:orientation="horizontal"
+                                        android:weightSum="2">
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:gravity="center_vertical">
+
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginStart="@dimen/_5sdp"
+                                                android:fontFamily="@font/roboto_regular"
+                                                android:text="Dropped"
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/_11ssp"
+                                                tools:ignore="HardcodedText,TooDeepLayout" />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.3"
+                                            android:gravity="center_vertical">
+
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:id="@+id/dayDroppedTVID"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginStart="@dimen/_5sdp"
+                                                android:fontFamily="@font/roboto_regular"
+
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/_11ssp"
+                                                tools:ignore="HardcodedText,TooDeepLayout" />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.3"
+                                            android:gravity="center_vertical">
+
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:id="@+id/monthDroppedTVID"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginStart="@dimen/_5sdp"
+                                                android:fontFamily="@font/roboto_regular"
+
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/_11ssp"
+                                                tools:ignore="HardcodedText,TooDeepLayout" />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.3"
+                                            android:gravity="center_vertical">
+
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:id="@+id/overallDroppedTVID"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginStart="@dimen/_5sdp"
+                                                android:fontFamily="@font/roboto_regular"
+
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/_11ssp"
+                                                tools:ignore="HardcodedText,TooDeepLayout" />
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0.7dp"
+                                        android:layout_marginStart="@dimen/_3sdp"
+                                        android:layout_marginEnd="@dimen/_3sdp"
+                                        android:background="@color/edit_b" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/_28sdp"
+                                        android:orientation="horizontal"
+                                        android:weightSum="2">
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:gravity="center_vertical">
+
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginStart="@dimen/_5sdp"
+                                                android:fontFamily="@font/roboto_regular"
+                                                android:text="Customer Meet Scheduled"
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/_11ssp"
+                                                tools:ignore="HardcodedText,TooDeepLayout" />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.3"
+                                            android:gravity="center_vertical">
+
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:id="@+id/dayCustomerMeetScheduledTVID"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginStart="@dimen/_5sdp"
+                                                android:fontFamily="@font/roboto_regular"
+
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/_11ssp"
+                                                tools:ignore="HardcodedText,TooDeepLayout" />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.3"
+                                            android:gravity="center_vertical">
+
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:id="@+id/monthCustomerMeetScheduledTVID"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginStart="@dimen/_5sdp"
+                                                android:fontFamily="@font/roboto_regular"
+
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/_11ssp"
+                                                tools:ignore="HardcodedText,TooDeepLayout" />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.3"
+                                            android:gravity="center_vertical">
+
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:id="@+id/overallCustomerMeetScheduledTVID"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginStart="@dimen/_5sdp"
+                                                android:fontFamily="@font/roboto_regular"
+
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/_11ssp"
+                                                tools:ignore="HardcodedText,TooDeepLayout" />
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0.7dp"
+                                        android:layout_marginStart="@dimen/_3sdp"
+                                        android:layout_marginEnd="@dimen/_3sdp"
+                                        android:background="@color/edit_b" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/_28sdp"
+                                        android:orientation="horizontal"
+                                        android:weightSum="2">
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:gravity="center_vertical">
+
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginStart="@dimen/_5sdp"
+                                                android:fontFamily="@font/roboto_regular"
+                                                android:text="Customer Meet Completed"
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/_11ssp"
+                                                tools:ignore="HardcodedText,TooDeepLayout" />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.3"
+                                            android:gravity="center_vertical">
+
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:id="@+id/dayCustomerMeetCompletedTVID"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginStart="@dimen/_5sdp"
+                                                android:fontFamily="@font/roboto_regular"
+
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/_11ssp"
+                                                tools:ignore="HardcodedText,TooDeepLayout" />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.3"
+                                            android:gravity="center_vertical">
+
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:id="@+id/monthCustomerMeetCompletedTVID"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginStart="@dimen/_5sdp"
+                                                android:fontFamily="@font/roboto_regular"
+
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/_11ssp"
+                                                tools:ignore="HardcodedText,TooDeepLayout" />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.3"
+                                            android:gravity="center_vertical">
+
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:id="@+id/overallCustomerMeetCompletedTVID"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginStart="@dimen/_5sdp"
+                                                android:fontFamily="@font/roboto_regular"
+
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/_11ssp"
+                                                tools:ignore="HardcodedText,TooDeepLayout" />
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0.7dp"
+                                        android:layout_marginStart="@dimen/_3sdp"
+                                        android:layout_marginEnd="@dimen/_3sdp"
+                                        android:background="@color/edit_b" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/_28sdp"
+                                        android:orientation="horizontal"
+                                        android:weightSum="2">
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:gravity="center_vertical">
+
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginStart="@dimen/_5sdp"
+                                                android:fontFamily="@font/roboto_regular"
+                                                android:text="Sale Scheduled"
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/_11ssp"
+                                                tools:ignore="HardcodedText,TooDeepLayout" />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.3"
+                                            android:gravity="center_vertical">
+
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:id="@+id/daySaleScheduledTVID"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginStart="@dimen/_5sdp"
+                                                android:fontFamily="@font/roboto_regular"
+
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/_11ssp"
+                                                tools:ignore="HardcodedText,TooDeepLayout" />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.3"
+                                            android:gravity="center_vertical">
+
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:id="@+id/monthSaleScheduledTVID"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginStart="@dimen/_5sdp"
+                                                android:fontFamily="@font/roboto_regular"
+
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/_11ssp"
+                                                tools:ignore="HardcodedText,TooDeepLayout" />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.3"
+                                            android:gravity="center_vertical">
+
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:id="@+id/overallSaleScheduledTVID"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginStart="@dimen/_5sdp"
+                                                android:fontFamily="@font/roboto_regular"
+
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/_11ssp"
+                                                tools:ignore="HardcodedText,TooDeepLayout" />
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0.7dp"
+                                        android:layout_marginStart="@dimen/_3sdp"
+                                        android:layout_marginEnd="@dimen/_3sdp"
+                                        android:background="@color/edit_b" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/_28sdp"
+                                        android:orientation="horizontal"
+                                        android:weightSum="2">
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:gravity="center_vertical">
+
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginStart="@dimen/_5sdp"
+                                                android:fontFamily="@font/roboto_regular"
+                                                android:text="Sale Completed"
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/_11ssp"
+                                                tools:ignore="HardcodedText,TooDeepLayout" />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.3"
+                                            android:gravity="center_vertical">
+
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:id="@+id/daySaleCompletedTVID"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginStart="@dimen/_5sdp"
+                                                android:fontFamily="@font/roboto_regular"
+
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/_11ssp"
+                                                tools:ignore="HardcodedText,TooDeepLayout" />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.3"
+                                            android:gravity="center_vertical">
+
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:id="@+id/monthSaleCompletedTVID"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginStart="@dimen/_5sdp"
+                                                android:fontFamily="@font/roboto_regular"
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/_11ssp"
+                                                tools:ignore="HardcodedText,TooDeepLayout" />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.3"
+                                            android:gravity="center_vertical">
+
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:id="@+id/overallSaleCompletedTVID"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginStart="@dimen/_5sdp"
+                                                android:fontFamily="@font/roboto_regular"
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/_11ssp"
+                                                tools:ignore="HardcodedText,TooDeepLayout" />
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+
+                            </RelativeLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+
+                    </RelativeLayout>
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/dashboard_userpic"
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:src="@drawable/profpic"
+                        app:civ_border_color="@color/edit_b"
+                        app:civ_border_width="0.7dp" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/reportingUsersRVID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <ProgressBar
+                        android:id="@+id/reportingUsersPB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:visibility="gone"/>
+
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:id="@+id/employeeCallDataRLID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.7dp"
+                        android:background="@color/edit_b"/>
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/horizontalScrollID">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/mainDetailsLLID"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_30sdp"
+                                android:baselineAligned="false"
+                                android:orientation="horizontal"
+                                android:weightSum="6"
+                                tools:ignore="UselessParent">
+
+                                <View
+                                    android:layout_width="0.7dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/black"/>
+
+
+                                <TextView
+                                    android:id="@+id/quantityTVID"
+                                    android:layout_width="@dimen/_80sdp"
+                                    android:layout_height="match_parent"
+                                    android:text="CUSTOMER NAME"
+                                    android:layout_gravity="center_vertical"
+                                    android:gravity="center_vertical"
+                                    android:padding="@dimen/_1sdp"
+                                    android:layout_weight="1"
+                                    android:paddingStart="@dimen/_5sdp"
+                                    android:background="@color/edit_b"
+                                    android:textSize="@dimen/_9ssp"
+                                    android:textColor="@color/black"
+                                    tools:ignore="HardcodedText,RtlSymmetry" />
+
+                                <View
+                                    android:layout_width="0.7dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/black"/>
+
+                                <TextView
+                                    android:id="@+id/uomTVID"
+                                    android:layout_width="@dimen/_90sdp"
+                                    android:layout_height="match_parent"
+                                    android:text="MOBILE NUMBER"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+                                    android:visibility="gone"
+                                    android:paddingStart="@dimen/_5sdp"
+                                    android:background="@color/edit_b"
+                                    android:textSize="@dimen/_9ssp"
+                                    android:textColor="@color/black"
+                                    tools:ignore="HardcodedText,RtlSymmetry" />
+
+                                <View
+                                    android:layout_width="0.7dp"
+                                    android:layout_height="match_parent"
+                                    android:visibility="gone"
+                                    android:background="@color/black"/>
+
+
+                                <TextView
+                                    android:layout_width="@dimen/_60sdp"
+                                    android:layout_height="match_parent"
+                                    android:text="CALL START"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+                                    android:textSize="@dimen/_9ssp"
+                                    android:textColor="@color/black"
+                                    android:paddingStart="@dimen/_5sdp"
+                                    android:background="@color/edit_b"
+                                    tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+
+                                <View
+                                    android:layout_width="0.7dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/black"/>
+
+
+                                <TextView
+                                    android:id="@+id/gstPerTVID"
+                                    android:layout_width="@dimen/_60sdp"
+                                    android:layout_height="match_parent"
+                                    android:text="CALL END"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+                                    android:background="@color/edit_b"
+                                    android:textSize="@dimen/_9ssp"
+                                    android:textColor="@color/black"
+                                    tools:ignore="HardcodedText,RtlHardcoded" />
+
+                                <View
+                                    android:layout_width="0.7dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/black"/>
+
+
+                                <TextView
+                                    android:id="@+id/gstTotalTVID"
+                                    android:layout_width="@dimen/_40sdp"
+                                    android:layout_height="match_parent"
+                                    android:text="SEC"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+                                    android:background="@color/edit_b"
+                                    android:paddingStart="@dimen/_5sdp"
+                                    android:textSize="@dimen/_9ssp"
+                                    android:textColor="@color/black"
+                                    tools:ignore="HardcodedText,RtlSymmetry" />
+
+                                <View
+                                    android:layout_width="0.7dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/black"/>
+
+
+                                <TextView
+                                    android:layout_width="@dimen/_70sdp"
+                                    android:layout_height="match_parent"
+                                    android:text="TIME GAP"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+                                    android:textSize="@dimen/_9ssp"
+                                    android:textColor="@color/black"
+                                    android:background="@color/edit_b"
+                                    android:paddingStart="@dimen/_5sdp"
+                                    tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+
+                                <View
+                                    android:layout_width="0.7dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/black"/>
+
+
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/rcID"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <ProgressBar
+                                    android:id="@+id/pb"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:visibility="gone"/>
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/employeeCallDataRCID"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
+
+
+                    <ProgressBar
+                        android:id="@+id/employeeCallDataPB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:indeterminateDrawable="@drawable/progress"
+                        android:visibility="gone" />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </androidx.core.widget.NestedScrollView>
+
+
+
+
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/mainPB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>

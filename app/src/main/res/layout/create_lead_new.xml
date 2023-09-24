@@ -1,0 +1,2000 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    style="@style/Theme.MaterialComponents"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_header">
+
+        <include layout="@layout/header_attendance"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="UselessParent">
+
+            <LinearLayout
+                android:id="@+id/mainView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="ContentDescription"
+                android:orientation="vertical">
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                   <!-- <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/name_input_layout"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Email"
+                        android:textColorHint="@color/edit_7"
+                        android:textSize="@dimen/_12ssp"
+                        android:layout_margin="5dp"
+                        app:boxStrokeColor="@color/black"
+                        app:errorEnabled="true"
+                        tools:ignore="HardcodedText">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/nameETID"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/sansation_regular"
+                            android:inputType="textEmailAddress"
+                            android:maxLines="1"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/edit_7"
+                            android:textSize="@dimen/_12ssp"
+                            android:textStyle="normal" />
+
+                    </com.google.android.material.textfield.TextInputLayout>-->
+
+
+
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:elevation="@dimen/_2sdp"
+                        >
+
+                        <RelativeLayout
+                            android:id="@+id/firstNameIVID"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_centerVertical="true"
+                            android:visibility="visible"
+                            android:layout_marginStart="@dimen/_5sdp">
+
+<!--                            <ImageView-->
+<!--                                android:layout_width="@dimen/_15sdp"-->
+<!--                                android:layout_height="@dimen/_15sdp"-->
+<!--                                android:layout_centerInParent="true"-->
+<!--                                android:background="@drawable/new_businessman"-->
+<!--                                android:backgroundTint="@color/bg_dark"-->
+<!--                                android:contentDescription="@string/app_name"/>-->
+
+                        </RelativeLayout>
+
+
+                     <!--   android:background="@android:color/transparent"-->
+                       <!-- <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/first_name_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_toEndOf="@id/firstNameIVID"
+                            android:layout_marginStart="@dimen/_5sdp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/firstNameETID"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_35sdp"
+                                android:background="@android:color/transparent"
+                                android:backgroundTint="@android:color/transparent"
+                                android:fontFamily="@font/roboto_regular"
+                                android:hint="@string/first_name"
+                                android:autofillHints="null"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black"
+                                android:textSize="@dimen/_12ssp"
+                                tools:ignore="UnusedAttribute" />
+
+                        </com.google.android.material.textfield.TextInputLayout>-->
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/first_name_layout"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:startIconDrawable="@drawable/user16"
+                            android:hint="@string/first_name"
+                            android:textColorHint="@color/edit_7"
+                            android:textSize="@dimen/_12ssp"
+                            android:orientation="vertical"
+                            app:boxStrokeColor="@color/black"
+                            app:errorEnabled="true"
+                            tools:ignore="HardcodedText">
+
+
+
+                           <!-- <ImageView
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/new_businessman"
+                                android:backgroundTint="@color/bg_dark"
+                                android:contentDescription="@string/app_name"/>-->
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/firstNameETID"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_35sdp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:inputType="textPersonName"
+                                android:maxLines="1"
+                                android:padding="3dp"
+                                android:autofillHints="null"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black"
+                                android:textSize="@dimen/_12ssp"
+                                android:textStyle="normal" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                    </RelativeLayout>
+
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/edit_b"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:visibility="gone"
+                        android:layout_marginEnd="@dimen/_5sdp"/>
+
+                    <RelativeLayout
+                        android:id="@+id/lastNameRLID"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:visibility="gone"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:elevation="@dimen/_2sdp"
+                        >
+
+                        <RelativeLayout
+                            android:id="@+id/lastNameIVID"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_centerVertical="true"
+                            android:visibility="gone"
+                            android:layout_marginStart="@dimen/_5sdp">
+
+                            <ImageView
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/user_"
+                                android:backgroundTint="@color/paynimo_logoOrangeColor"
+                                android:contentDescription="@string/app_name"/>
+
+                        </RelativeLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/last_name_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_toEndOf="@id/lastNameIVID">
+
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/lastNameETID"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_35sdp"
+                                android:background="@android:color/transparent"
+                                android:backgroundTint="@android:color/transparent"
+                                android:fontFamily="@font/roboto_regular"
+                                android:hint="Last Name"
+                                android:padding="4dp"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/edit_7"
+                                android:textSize="@dimen/_12ssp"
+                                tools:ignore="HardcodedText,UnusedAttribute" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/lastNameView"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/edit_b"
+                        android:visibility="gone"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"/>
+
+                    <RelativeLayout
+                        android:id="@+id/emailRLID"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:visibility="gone"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:elevation="@dimen/_2sdp"
+                        >
+
+                        <RelativeLayout
+                            android:id="@+id/emailIVID"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_centerVertical="true"
+                            android:visibility="gone"
+                            android:layout_marginStart="@dimen/_5sdp">
+
+                            <ImageView
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/email_"
+                                android:backgroundTint="@color/paynimo_logoOrangeColor"
+                                android:contentDescription="@string/app_name"/>
+
+                        </RelativeLayout>
+
+                  <!--      <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/email_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_toEndOf="@id/emailIVID"
+                            android:layout_marginStart="@dimen/_5sdp">
+
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/emailETID"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_35sdp"
+                                android:background="@android:color/transparent"
+                                android:backgroundTint="@android:color/transparent"
+                                android:fontFamily="@font/roboto_regular"
+                                android:hint="Email"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black"
+                                android:textSize="@dimen/_12ssp"
+                                tools:ignore="HardcodedText,UnusedAttribute" />
+
+                        </com.google.android.material.textfield.TextInputLayout>-->
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/email_layout"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Email"
+                            app:startIconDrawable="@drawable/mail16"
+                            android:textColorHint="@color/edit_7"
+                            android:textSize="@dimen/_12ssp"
+                            app:boxStrokeColor="@color/black"
+                            app:errorEnabled="true"
+                            tools:ignore="HardcodedText">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/emailETID"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_35sdp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:inputType="textPersonName"
+                                android:maxLines="1"
+                                android:padding="4dp"
+                                android:autofillHints="null"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black"
+                                android:textSize="@dimen/_12ssp"
+                                android:textStyle="normal" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/emailView"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/edit_b"
+                        android:visibility="gone"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:elevation="@dimen/_2sdp"
+                        >
+
+                        <RelativeLayout
+                            android:id="@+id/mobileIVID"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_centerVertical="true"
+                            android:visibility="gone"
+                            android:layout_marginStart="@dimen/_5sdp">
+
+                            <ImageView
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:layout_centerInParent="true"
+                                android:backgroundTint="@color/paynimo_logoOrangeColor"
+                                android:background="@drawable/mobile_"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/countryCodeRLID"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@+id/mobileIVID"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:visibility="gone"
+                            android:background="@drawable/bg_new_login2">
+
+
+                        </RelativeLayout>
+
+<!--
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/mobile_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_toEndOf="@+id/countryCodeRLID"
+                            android:layout_marginStart="@dimen/_5sdp">
+
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/mobileETID"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical"
+                                android:background="@android:color/transparent"
+                                android:backgroundTint="@android:color/transparent"
+                                android:fontFamily="@font/roboto_regular"
+                                android:gravity="center_vertical"
+                                android:hint="Mobile Number"
+                                android:maxLength="10"
+                                android:inputType="number"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black"
+                                android:textSize="@dimen/_12ssp"
+                                tools:ignore="HardcodedText,UnusedAttribute" />
+
+                        </com.google.android.material.textfield.TextInputLayout>-->
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/mobile_layout"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Mobile Number"
+                            android:textColorHint="@color/edit_7"
+                            app:startIconDrawable="@drawable/call16"
+                            android:textSize="@dimen/_12ssp"
+                            app:boxStrokeColor="@color/black"
+                            app:errorEnabled="true"
+                            tools:ignore="HardcodedText">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/mobileETID"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_35sdp"
+                                android:autofillHints="null"
+                                android:fontFamily="@font/roboto_regular"
+                                android:inputType="number"
+                                android:maxLength="13"
+
+                                android:padding="4dp"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black"
+                                android:textSize="@dimen/_12ssp"
+                                android:textStyle="normal" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+
+
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/edit_b"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:visibility="gone"
+                        android:layout_marginEnd="@dimen/_5sdp"/>
+
+                    <RelativeLayout
+                        android:id="@+id/altNumberRLID"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:visibility="gone"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:elevation="@dimen/_2sdp"
+                        >
+
+                        <RelativeLayout
+                            android:id="@+id/altMobileIVID"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_centerVertical="true"
+                            android:visibility="gone"
+                            android:layout_marginStart="@dimen/_5sdp">
+
+                            <ImageView
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:layout_centerInParent="true"
+                                android:backgroundTint="@color/paynimo_logoOrangeColor"
+                                android:background="@drawable/_phone"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/altCountryCodeRLID"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_centerVertical="true"
+                            android:visibility="gone"
+                            android:layout_toEndOf="@+id/altMobileIVID"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:background="@drawable/bg_new_login2">
+
+
+                        </RelativeLayout>
+
+<!--
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/alternate_mobile_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:layout_toEndOf="@id/altCountryCodeRLID"
+                            android:layout_marginStart="@dimen/_5sdp">
+
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/alternateETID"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical"
+                                android:background="@android:color/transparent"
+                                android:backgroundTint="@android:color/transparent"
+                                android:fontFamily="@font/roboto_regular"
+                                android:gravity="center_vertical"
+                                android:hint="Alternate Number"
+                                android:inputType="number"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black"
+                                android:textSize="@dimen/_12ssp"
+                                tools:ignore="HardcodedText,UnusedAttribute" />
+
+                        </com.google.android.material.textfield.TextInputLayout>-->
+
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/alternate_mobile_layout"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Alternate Number"
+                            app:startIconDrawable="@drawable/call16"
+                            android:textColorHint="@color/edit_7"
+                            android:textSize="@dimen/_12ssp"
+                            app:boxStrokeColor="@color/black"
+                            app:errorEnabled="true"
+                            tools:ignore="HardcodedText">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/alternateETID"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_35sdp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:maxLength="10"
+                                android:padding="4dp"
+                                android:inputType="number"
+                                android:autofillHints="null"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black"
+                                android:textSize="@dimen/_12ssp"
+                                android:textStyle="normal" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/altNumberView"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/edit_b"
+                        android:visibility="gone"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"/>
+
+                    <RelativeLayout
+                        android:id="@+id/reqRLID"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:elevation="@dimen/_2sdp">
+
+                        <RelativeLayout
+                            android:id="@+id/requirementIVID"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_centerVertical="true"
+                            android:visibility="gone"
+                            android:layout_marginStart="@dimen/_5sdp">
+
+                            <ImageView
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:layout_centerInParent="true"
+                                android:backgroundTint="@color/paynimo_logoOrangeColor"
+                                android:background="@drawable/source_"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/_1sdp"
+                            android:layout_marginEnd="@dimen/_1sdp"
+                            android:background="@drawable/bg_box"
+                            android:layout_toEndOf="@+id/requirementIVID">
+
+                            <TextView
+                                android:id="@+id/requirementTVID"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:text="Select Requirement Type"
+                                android:textColor="@color/black"
+                                android:visibility="gone"
+                                android:textSize="@dimen/_12ssp"
+                                tools:ignore="HardcodedText" />
+
+                            <ImageView
+                                android:id="@+id/sst2ImageId"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_marginStart="@dimen/_12sdp"
+                                android:background="@drawable/management16"
+                                android:contentDescription="@string/app_name" />
+
+                            <androidx.appcompat.widget.AppCompatSpinner
+
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:layout_marginBottom="@dimen/_2sdp"
+                                android:id="@+id/requirementSPID"
+                                android:layout_width="match_parent"
+                                android:layout_toRightOf="@id/sst2ImageId"
+                                android:layout_marginStart="@dimen/_10sdp"
+
+                                android:layout_height="match_parent" />
+
+                            <ImageView
+                                android:layout_width="@dimen/_6sdp"
+                                android:layout_height="@dimen/_6sdp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_marginEnd="@dimen/_15sdp"
+                                android:background="@drawable/down"
+                                android:contentDescription="@string/app_name" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/requirementView"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/edit_b"
+                        android:visibility="gone"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"/>
+
+
+                    <RelativeLayout
+                        android:id="@+id/souRLID"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:layout_marginStart="@dimen/_1sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginEnd="@dimen/_1sdp"
+                        android:elevation="@dimen/_2sdp">
+
+                        <RelativeLayout
+                            android:id="@+id/sourceIVID"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_centerVertical="true"
+                            android:visibility="gone"
+                            android:layout_marginStart="@dimen/_5sdp">
+
+                            <ImageView
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:layout_centerInParent="true"
+                                android:backgroundTint="@color/paynimo_logoOrangeColor"
+                                android:background="@drawable/source_type_"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:layout_marginBottom="@dimen/_2sdp"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:background="@drawable/bg_box"
+                            android:layout_toEndOf="@+id/sourceIVID">
+                            <ImageView
+                                android:id="@+id/sstImageId"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginTop="@dimen/_5sdp"
+                               android:layout_marginStart="@dimen/_14sdp"
+                                android:background="@drawable/cloudserver16"
+                                android:contentDescription="@string/app_name" />
+
+
+                            <TextView
+                                android:id="@+id/sourceTVID"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@id/sstImageId"
+                                android:layout_marginStart="@dimen/_16sdp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:text="Select Source Type"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_12ssp"
+                                tools:ignore="HardcodedText" />
+
+                            <ImageView
+                                android:layout_width="@dimen/_6sdp"
+                                android:layout_height="@dimen/_6sdp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_marginEnd="@dimen/_15sdp"
+                                android:background="@drawable/down"
+                                android:contentDescription="@string/app_name" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/sourceView"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/edit_b"
+                        android:visibility="gone"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"/>
+
+
+                    <RelativeLayout
+                        android:id="@+id/actRLID"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:elevation="@dimen/_2sdp">
+
+                        <RelativeLayout
+                            android:id="@+id/activityIVID"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_centerVertical="true"
+                            android:visibility="gone"
+                            android:layout_marginStart="@dimen/_5sdp">
+
+                            <ImageView
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:layout_centerInParent="true"
+                                android:backgroundTint="@color/paynimo_logoOrangeColor"
+                                android:background="@drawable/industry_"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/_1sdp"
+                            android:layout_marginEnd="@dimen/_1sdp"
+                            android:background="@drawable/bg_box"
+                            android:layout_toEndOf="@+id/activityIVID">
+
+                            <TextView
+                                android:id="@+id/activityTVID"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:text="Select Activity Type"
+                                android:textColor="@color/black"
+                                android:visibility="gone"
+                                android:textSize="@dimen/_12ssp"
+                                tools:ignore="HardcodedText" />
+                            <ImageView
+                                android:id="@+id/sst3ImageId"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_marginStart="@dimen/_12sdp"
+                                android:background="@drawable/customerservice16"
+                                android:contentDescription="@string/app_name" />
+
+                            <androidx.appcompat.widget.AppCompatSpinner
+                                android:id="@+id/activitiesSPID"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:layout_marginBottom="@dimen/_2sdp"
+                                android:layout_width="match_parent"
+                                android:layout_toRightOf="@id/sst3ImageId"
+                                android:layout_marginStart="@dimen/_10sdp"
+
+                                android:layout_height="match_parent" />
+
+
+                            <ImageView
+                                android:layout_width="@dimen/_6sdp"
+                                android:layout_height="@dimen/_6sdp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_marginEnd="@dimen/_15sdp"
+                                android:background="@drawable/down"
+                                android:contentDescription="@string/app_name" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/edit_b"
+                        android:visibility="gone"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"/>
+
+                    <RelativeLayout
+                        android:id="@+id/dateLLID"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/bg_box"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:elevation="@dimen/_2sdp"
+                        >
+
+                        <RelativeLayout
+                            android:id="@+id/activityDateIVID"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_centerVertical="true"
+                            android:visibility="gone"
+                            android:layout_marginStart="@dimen/_5sdp">
+
+                            <ImageView
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:layout_centerInParent="true"
+                                android:backgroundTint="@color/paynimo_logoOrangeColor"
+                                android:background="@drawable/cal_"/>
+
+                        </RelativeLayout>
+                        <ImageView
+                            android:id="@+id/sst4ImageId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginStart="@dimen/_12sdp"
+                            android:background="@drawable/calendar16"
+                            android:contentDescription="@string/app_name" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/_12sdp"
+                            android:layout_toEndOf="@id/sst4ImageId"
+
+
+
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_regular"
+                                android:gravity="center_vertical"
+                                android:text="Activity Date"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_11ssp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:id="@+id/dateTVID"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:gravity="center_vertical"
+                                android:text="Date"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_11ssp"
+                                tools:ignore="HardcodedText" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/edit_b"
+                        android:visibility="gone"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:weightSum="4"
+                        android:visibility="gone"
+                        android:orientation="horizontal"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp">
+
+                        <CheckBox
+                            android:id="@+id/smsCBID"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:checked="true"
+                            android:text="SMS"
+                            android:textSize="@dimen/_9ssp"
+                            tools:ignore="HardcodedText,RtlSymmetry"
+                            android:paddingStart="@dimen/_5sdp"/>
+
+                        <CheckBox
+                            android:id="@+id/emailCBID"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="Email"
+                            android:textSize="@dimen/_9ssp"
+                            tools:ignore="HardcodedText,RtlSymmetry"
+                            android:paddingStart="@dimen/_5sdp"/>
+
+                        <CheckBox
+                            android:id="@+id/whatsAppCBID"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:checked="true"
+                            android:text="WhatsApp"
+                            android:textSize="@dimen/_9ssp"
+                            tools:ignore="HardcodedText,RtlSymmetry"
+                            android:paddingStart="@dimen/_2sdp"/>
+
+                        <CheckBox
+                            android:id="@+id/voiceCallCBID"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:checked="true"
+                            android:text="Voice Call"
+                            android:textSize="@dimen/_9ssp"
+                            tools:ignore="HardcodedText,RtlSymmetry"
+                            android:paddingStart="@dimen/_5sdp"/>
+
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/edit_b"
+                        android:visibility="gone"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"/>
+
+
+                    <RelativeLayout
+                        android:id="@+id/websiteRLID"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:visibility="gone"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:elevation="@dimen/_2sdp"
+                        >
+
+                        <RelativeLayout
+                            android:id="@+id/websiteIVID"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_centerVertical="true"
+                            android:visibility="gone"
+                            android:layout_marginStart="@dimen/_5sdp">
+
+                            <ImageView
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:layout_centerInParent="true"
+                                android:backgroundTint="@color/paynimo_logoOrangeColor"
+                                android:background="@drawable/_globe"/>
+
+                        </RelativeLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/website_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_toEndOf="@+id/websiteIVID"
+                            android:layout_marginStart="@dimen/_5sdp">
+
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/websiteETID"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_35sdp"
+                                android:background="@android:color/transparent"
+                                android:backgroundTint="@android:color/transparent"
+                                android:fontFamily="@font/roboto_regular"
+                                android:hint="Website"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black"
+                                android:textSize="@dimen/_12ssp"
+                                tools:ignore="HardcodedText,UnusedAttribute" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/websiteView"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/edit_b"
+                        android:visibility="gone"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"/>
+
+                    <RelativeLayout
+                        android:id="@+id/locationRLID"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:visibility="gone"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:elevation="@dimen/_2sdp"
+                        >
+
+                        <RelativeLayout
+                            android:id="@+id/locationIVID"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_centerVertical="true"
+                            android:visibility="gone"
+                            android:layout_marginStart="@dimen/_5sdp">
+
+                            <ImageView
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:layout_centerInParent="true"
+                                android:backgroundTint="@color/paynimo_logoOrangeColor"
+                                android:background="@drawable/city_"/>
+
+                        </RelativeLayout>
+
+                     <!--   <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/location_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_toEndOf="@+id/locationIVID"
+                            android:layout_marginStart="@dimen/_5sdp">
+
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/locationETID"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_35sdp"
+                                android:background="@android:color/transparent"
+                                android:backgroundTint="@android:color/transparent"
+                                android:fontFamily="@font/roboto_regular"
+                                android:hint="Location"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black"
+                                android:textSize="@dimen/_12ssp"
+                                tools:ignore="HardcodedText,UnusedAttribute" />
+
+                        </com.google.android.material.textfield.TextInputLayout>-->
+
+
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/location_layout"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Location"
+                            app:startIconDrawable="@drawable/buildings16"
+                            android:textColorHint="@color/edit_7"
+                            android:textSize="@dimen/_12ssp"
+                            app:boxStrokeColor="@color/black"
+                            app:errorEnabled="true"
+                            tools:ignore="HardcodedText">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/locationETID"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_35sdp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:maxLength="10"
+                                android:padding="4dp"
+
+                                android:autofillHints="null"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black"
+                                android:textSize="@dimen/_12ssp"
+                                android:textStyle="normal" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/locationView"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/edit_b"
+                        android:visibility="gone"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"/>
+
+                    <RelativeLayout
+                        android:id="@+id/cityRLID"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:visibility="gone"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:elevation="@dimen/_2sdp"
+                        >
+
+                        <RelativeLayout
+                            android:id="@+id/cityIVID"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_centerVertical="true"
+                            android:visibility="gone"
+                            android:layout_marginStart="@dimen/_5sdp">
+
+                            <ImageView
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:layout_centerInParent="true"
+                                android:backgroundTint="@color/paynimo_logoOrangeColor"
+                                android:background="@drawable/city_"/>
+
+                        </RelativeLayout>
+
+                <!--        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/city_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_toEndOf="@+id/cityIVID"
+                            android:layout_marginStart="@dimen/_5sdp">
+
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/cityETID"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_35sdp"
+                                android:background="@android:color/transparent"
+                                android:backgroundTint="@android:color/transparent"
+                                android:fontFamily="@font/roboto_regular"
+                                android:hint="City"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black"
+                                android:textSize="@dimen/_12ssp"
+                                tools:ignore="HardcodedText,UnusedAttribute" />
+
+                        </com.google.android.material.textfield.TextInputLayout>-->
+
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/city_layout"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="City"
+                            app:startIconDrawable="@drawable/location16"
+                            android:textColorHint="@color/edit_7"
+                            android:textSize="@dimen/_12ssp"
+                            app:boxStrokeColor="@color/black"
+                            app:errorEnabled="true"
+                            tools:ignore="HardcodedText">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/cityETID"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_35sdp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:maxLength="10"
+                                android:padding="4dp"
+                                android:inputType="text"
+                                android:autofillHints="null"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black"
+                                android:textSize="@dimen/_12ssp"
+                                android:textStyle="normal" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/cityView"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/edit_b"
+                        android:visibility="gone"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"/>
+
+
+                    <RelativeLayout
+                        android:id="@+id/companyRLID"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:visibility="gone"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:elevation="@dimen/_2sdp"
+
+                        tools:ignore="TooManyViews">
+
+                        <RelativeLayout
+                            android:id="@+id/companyIVID"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_centerVertical="true"
+                            android:visibility="gone"
+                            android:layout_marginStart="@dimen/_5sdp">
+
+                            <ImageView
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:layout_centerInParent="true"
+                                android:backgroundTint="@color/paynimo_logoOrangeColor"
+                                android:background="@drawable/company_"/>
+
+                        </RelativeLayout>
+<!--
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/company_name_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_toEndOf="@+id/companyIVID"
+                            android:layout_marginStart="@dimen/_5sdp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/companyETID"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_35sdp"
+                                android:background="@android:color/transparent"
+                                android:backgroundTint="@android:color/transparent"
+                                android:fontFamily="@font/roboto_regular"
+                                android:hint="Company Name"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/edit_7"
+                                android:textSize="@dimen/_12ssp"
+                                tools:ignore="HardcodedText,UnusedAttribute" />
+
+                        </com.google.android.material.textfield.TextInputLayout>-->
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/company_name_layout"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Company Name"
+                            app:startIconDrawable="@drawable/enterprise16"
+                            android:textColorHint="@color/edit_7"
+                            android:textSize="@dimen/_12ssp"
+                            app:boxStrokeColor="@color/black"
+                            app:errorEnabled="true"
+                            tools:ignore="HardcodedText">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/companyETID"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_35sdp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:maxLength="10"
+                                android:padding="4dp"
+                                android:inputType="text"
+                                android:autofillHints="null"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black"
+                                android:textSize="@dimen/_12ssp"
+                                android:textStyle="normal" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/notesView"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/edit_b"
+                        android:visibility="gone"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"/>
+
+
+                    <RelativeLayout
+                        android:id="@+id/notesRLID"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_50sdp"
+                        android:visibility="visible"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:elevation="@dimen/_2sdp"
+
+                        tools:ignore="TooManyViews">
+
+                        <RelativeLayout
+                            android:id="@+id/notesIVID"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_centerVertical="true"
+                            android:visibility="gone"
+                            android:layout_marginStart="@dimen/_5sdp">
+
+                            <ImageView
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:layout_centerInParent="true"
+                                android:backgroundTint="@color/paynimo_logoOrangeColor"
+                                android:background="@drawable/company_"/>
+
+                        </RelativeLayout>
+
+                    <!--    <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/notesLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_toEndOf="@+id/notesIVID"
+                            android:layout_marginStart="@dimen/_5sdp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/notesETID"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_35sdp"
+                                android:background="@android:color/transparent"
+                                android:backgroundTint="@android:color/transparent"
+                                android:fontFamily="@font/roboto_regular"
+                                android:hint="Enter Notes"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/edit_7"
+                                android:textSize="@dimen/_12ssp"
+                                tools:ignore="HardcodedText,UnusedAttribute" />
+
+                        </com.google.android.material.textfield.TextInputLayout>-->
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/notesLayout"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Enter Notes"
+                            android:textColorHint="@color/edit_7"
+                            android:textSize="@dimen/_12ssp"
+                            app:startIconDrawable="@drawable/note16"
+                            app:boxStrokeColor="@color/black"
+                            app:errorEnabled="true"
+                            tools:ignore="HardcodedText">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/notesETID"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_45sdp"
+                                android:fontFamily="@font/roboto_regular"
+
+                                android:padding="4dp"
+                                android:inputType="text"
+                                android:autofillHints="null"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black"
+                                android:textSize="@dimen/_12ssp"
+                                android:textStyle="normal" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/companyView"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/edit_b"
+                        android:visibility="gone"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"/>
+
+
+                    <RelativeLayout
+                        android:id="@+id/gstRLID"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:visibility="gone"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:elevation="@dimen/_2sdp"
+                        >
+
+                        <RelativeLayout
+                            android:id="@+id/gstIVID"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:visibility="gone"
+                            android:background="@drawable/bg_circle_menu"
+                            android:backgroundTint="@color/white">
+
+                            <ImageView
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/_estimation"/>
+
+                        </RelativeLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/gst_number_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_toEndOf="@+id/gstIVID"
+                            android:layout_marginStart="@dimen/_5sdp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/gstETID"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_35sdp"
+                                android:background="@android:color/transparent"
+                                android:backgroundTint="@android:color/transparent"
+                                android:fontFamily="@font/roboto_regular"
+                                android:hint="Gst Number"
+                                android:inputType="text"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/edit_7"
+                                android:textSize="@dimen/_12ssp"
+                                tools:ignore="HardcodedText,UnusedAttribute" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/gstView"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/edit_b"
+                        android:visibility="gone"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"/>
+
+                    <RelativeLayout
+                        android:id="@+id/leadPicRLIDMain"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginTop="@dimen/_5sdp">
+
+                        <RelativeLayout
+                            android:id="@+id/leadPicRLID"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_100sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="@drawable/bg_box2"
+                            android:layout_centerHorizontal="true">
+
+                            <ImageView
+                                android:id="@+id/leadPic"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="@dimen/_10sdp"
+                                android:layout_centerInParent="true"
+                                android:scaleType="fitXY"
+                                android:contentDescription="@string/app_name" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/choosePicRLID"
+                            android:layout_width="@dimen/_120sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:background="@drawable/bg_dropdowns"
+                            android:layout_below="@+id/leadPicRLID"
+                            android:backgroundTint="@color/blue"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:layout_centerHorizontal="true">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Choose Photo"
+                                android:layout_centerInParent="true"
+                                android:fontFamily="@font/roboto_medium"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_12ssp"
+                                tools:ignore="HardcodedText" />
+
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/nextLeadCVID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    app:cardCornerRadius="@dimen/_6sdp"
+                    android:visibility="visible"
+                    app:cardElevation="@dimen/_2sdp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="@drawable/bg_gradient_main">
+
+                        <RelativeLayout
+                            android:id="@+id/nextLeadRLID"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_80sdp"
+                            android:clickable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            tools:ignore="KeyboardInaccessibleWidget,UnusedAttribute,UselessParent">
+
+
+                            <RelativeLayout
+                                android:id="@+id/newMainLeadView"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:clickable="true"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                tools:ignore="KeyboardInaccessibleWidget,UnusedAttribute,UselessParent">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:id="@+id/nextLeadPic"
+                                    android:layout_width="@dimen/_35sdp"
+                                    android:layout_height="@dimen/_35sdp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginStart="@dimen/_10sdp"
+                                    android:layout_marginEnd="@dimen/_5sdp"
+                                    android:src="@drawable/user"
+                                    app:civ_border_width="@dimen/_1sdp"
+                                    app:civ_border_color="@color/edit_b"
+                                    android:alpha="0.7" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_centerVertical="true"
+                                    android:layout_toEndOf="@+id/nextLeadPic"
+                                    android:gravity="center_vertical"
+                                    android:orientation="vertical"
+                                    android:paddingStart="@dimen/_8ssp"
+                                    android:paddingTop="@dimen/_2sdp"
+                                    android:paddingEnd="@dimen/_8ssp"
+                                    android:paddingBottom="@dimen/_2sdp">
+
+                                    <TextView
+                                        android:id="@+id/newLeadNameTVID"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:maxLines="1"
+                                        android:textColor="@color/white"
+                                        android:layout_marginEnd="@dimen/_85sdp"
+                                        android:textSize="@dimen/_14ssp"
+                                        tools:ignore="HardcodedText" />
+
+                                    <TextView
+                                        android:id="@+id/leadMobileTVID"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto_regular"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/_9ssp"
+                                        tools:ignore="HardcodedText" />
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/nextCallLLID"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginBottom="@dimen/_2sdp"
+                                    android:foreground="?selectableItemBackground"
+                                    android:gravity="right"
+                                    android:orientation="horizontal">
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/white"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:textSize="@dimen/_10ssp"
+                                        android:text="Next Tele Customer"
+                                        android:layout_marginEnd="@dimen/_5sdp"
+                                        android:layout_marginTop="@dimen/_5sdp"
+                                        tools:ignore="HardcodedText" />
+
+
+                                    <RelativeLayout
+                                        android:id="@+id/whatsAppCallRLID"
+                                        android:layout_width="@dimen/_35sdp"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        android:alpha="0.6"
+                                        android:elevation="@dimen/_5sdp"
+                                        android:gravity="center"
+                                        android:visibility="gone"
+                                        tools:ignore="UnusedAttribute">
+
+                                        <ImageView
+                                            android:layout_width="@dimen/_20sdp"
+                                            android:layout_height="@dimen/_20sdp"
+                                            android:layout_centerInParent="true"
+                                            android:background="@drawable/whatsapp"
+                                            android:contentDescription="@string/app_name" />
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:id="@+id/newPhoneRL"
+                                        android:layout_width="@dimen/_80sdp"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        android:alpha="0.6"
+                                        android:elevation="@dimen/_5sdp"
+                                        android:gravity="center"
+                                        android:paddingEnd="@dimen/_5sdp"
+                                        android:visibility="gone"
+                                        tools:ignore="RtlSymmetry,UselessParent">
+
+                                        <RelativeLayout
+                                            android:layout_width="@dimen/_70sdp"
+                                            android:layout_height="@dimen/_25sdp"
+                                            android:layout_centerInParent="true"
+                                            android:background="@drawable/bg_login_btn">
+
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_centerInParent="true"
+                                                android:fontFamily="@font/roboto_medium"
+                                                android:text="View"
+                                                android:textColor="@color/black"
+                                                tools:ignore="HardcodedText" />
+
+                                            <!--<ImageView
+                                                android:layout_width="@dimen/_10sdp"
+                                                android:layout_height="@dimen/_10sdp"
+                                                android:layout_centerInParent="true"
+                                                android:background="@drawable/_phone"
+                                                android:backgroundTint="@color/white"
+                                                android:contentDescription="@string/app_name" />-->
+
+
+                                        </RelativeLayout>
+
+
+                                    </RelativeLayout>
+                                </LinearLayout>
+
+
+                            </RelativeLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_alignParentBottom="true"
+                                android:background="#b4b4b4"
+                                android:visibility="visible" />
+
+                        </RelativeLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_45sdp"
+                            android:orientation="horizontal"
+                            android:background="@color/bg_background"
+                            android:visibility="gone"
+                            android:weightSum="3">
+
+                            <LinearLayout
+                                android:id="@+id/whatsAppLLID"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:layout_gravity="center"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="@dimen/_20sdp"
+                                    android:layout_height="@dimen/_20sdp"
+                                    android:background="@drawable/whatsappicon"/>
+
+
+                                <TextView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:textSize="@dimen/_9ssp"
+                                    android:textColor="@color/black"
+                                    android:layout_marginTop="@dimen/_2sdp"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:text="WHATSAPP"
+                                    tools:ignore="HardcodedText" />
+
+
+
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="0.7dp"
+                                android:layout_height="match_parent"
+                                android:visibility="gone"
+                                android:background="@color/edit_b"/>
+
+
+                            <LinearLayout
+                                android:id="@+id/skipLLID"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:layout_gravity="center"
+                                android:gravity="center">
+
+                                <RelativeLayout
+                                    android:layout_width="@dimen/_20sdp"
+                                    android:layout_height="@dimen/_20sdp"
+                                    android:layout_centerInParent="true"
+                                    android:background="@drawable/bg_phone_circle_1">
+
+                                    <ImageView
+                                        android:layout_width="@dimen/_10sdp"
+                                        android:layout_height="@dimen/_10sdp"
+                                        android:layout_centerInParent="true"
+                                        android:background="@drawable/right"
+                                        android:backgroundTint="@color/white"
+                                        android:contentDescription="@string/app_name" />
+
+
+                                </RelativeLayout>
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:textSize="@dimen/_9ssp"
+                                    android:textColor="@color/black"
+                                    android:layout_marginTop="@dimen/_2sdp"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:text="SKIP"
+                                    tools:ignore="HardcodedText" />
+
+                                <!--<ImageView
+                                    android:layout_width="@dimen/_15sdp"
+                                    android:layout_height="@dimen/_15sdp"
+                                    android:background="@drawable/right"
+                                    android:layout_marginStart="@dimen/_5sdp"/>-->
+
+
+
+                            </LinearLayout>
+
+
+                            <View
+                                android:layout_width="0.7dp"
+                                android:layout_height="match_parent"
+                                android:visibility="gone"
+                                android:background="@color/edit_b"/>
+
+
+                            <LinearLayout
+                                android:id="@+id/callLLID"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:layout_gravity="center"
+                                android:gravity="center">
+
+                                <RelativeLayout
+                                    android:layout_width="@dimen/_20sdp"
+                                    android:layout_height="@dimen/_20sdp"
+                                    android:layout_centerInParent="true"
+                                    android:background="@drawable/bg_phone_circle_1">
+
+                                    <ImageView
+                                        android:layout_width="@dimen/_10sdp"
+                                        android:layout_height="@dimen/_10sdp"
+                                        android:layout_centerInParent="true"
+                                        android:background="@drawable/_phone"
+                                        android:backgroundTint="@color/white"
+                                        android:contentDescription="@string/app_name" />
+
+
+                                </RelativeLayout>
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:textSize="@dimen/_9ssp"
+                                    android:textColor="@color/black"
+                                    android:layout_marginTop="@dimen/_2sdp"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:text="CALL"
+                                    tools:ignore="HardcodedText" />
+
+
+
+
+                            </LinearLayout>
+
+
+
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+
+                </androidx.cardview.widget.CardView>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:weightSum="2"
+                    tools:ignore="DisableBaselineAlignment">
+
+                    <LinearLayout
+
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/longFormLLID"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/bg_dropdowns"
+                            android:backgroundTint="@color/paynimo_logoOrangeColor"
+                            android:textColor="@color/white"
+                            android:layout_margin="@dimen/_2sdp"
+                            android:text="full form"
+                            tools:ignore="HardcodedText" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_weight="1"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/shortFormLLID"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/bg_dropdowns"
+                            android:backgroundTint="@color/paynimo_tabBgBlueColor"
+                            android:textColor="@color/white"
+                            android:layout_margin="@dimen/_2sdp"
+                            android:text="short form"
+                            tools:ignore="HardcodedText" />
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+
+        android:id="@+id/RLID"
+        android:layout_below="@+id/headerABLID"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+
+        <WebView
+            android:id="@+id/Createleadweview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp" />
+
+    </RelativeLayout>
+
+
+</LinearLayout >

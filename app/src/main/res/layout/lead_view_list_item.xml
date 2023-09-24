@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chauthai.swipereveallayout.SwipeRevealLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipelayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:dragEdge="right"
+    app:mode="same_level">
+
+    <!--Swipe Layout-->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="@dimen/_2sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:id="@+id/messageBtnRLID"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:alpha="0.6"
+            android:elevation="@dimen/_5sdp"
+            android:gravity="center"
+            tools:ignore="UnusedAttribute">
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/sms"
+                android:visibility="visible"
+                android:contentDescription="@string/app_name" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mailBtnRLID"
+            android:layout_width="@dimen/_26sdp"
+            android:layout_height="@dimen/_26sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:alpha="0.6"
+            android:elevation="@dimen/_5sdp"
+            tools:ignore="UnusedAttribute">
+
+            <RelativeLayout
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:background="@drawable/bg_email_circle_1"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/_mail"
+                    android:backgroundTint="@color/white"
+                    android:contentDescription="@string/app_name"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/whatsAppBtnRLID"
+            android:layout_width="@dimen/_26sdp"
+            android:layout_height="@dimen/_26sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:background="@drawable/bg_whats_app_circle_1"
+            android:elevation="@dimen/_5sdp"
+            android:visibility="gone"
+            tools:ignore="UnusedAttribute">
+
+            <ImageView
+                android:layout_width="@dimen/_14sdp"
+                android:layout_height="@dimen/_14sdp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/_whatsapp"
+                android:backgroundTint="@color/white"
+                android:contentDescription="@string/app_name"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <!--Main Layout-->
+
+        <RelativeLayout
+            android:id="@+id/newMainLeadView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sdp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            tools:ignore="KeyboardInaccessibleWidget,UnusedAttribute,UselessParent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/leadPic"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_2sdp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/leadPic"
+                android:layout_toStartOf="@+id/callLLID"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/_8ssp"
+                android:paddingTop="@dimen/_2sdp"
+                android:paddingEnd="@dimen/_2sdp"
+                android:paddingBottom="@dimen/_2sdp">
+
+                <TextView
+                    android:id="@+id/newLeadNameTVID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:maxLines="1"
+                    android:text="Customer Name"
+                    android:textColor="#767575"
+                    android:textSize="@dimen/_12ssp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/leadMobileTVID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/newLeadNameTVID"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="Customer Name"
+                    android:textColor="#8E8C8C"
+                    android:textSize="@dimen/_9ssp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/dateTVID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/newLeadNameTVID"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_toEndOf="@id/leadMobileTVID"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColor="#8E8C8C"
+                    android:textSize="@dimen/_9ssp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/timeTVID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/newLeadNameTVID"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_toEndOf="@id/dateTVID"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColor="#8E8C8C"
+                    android:textSize="@dimen/_9ssp"
+                    android:visibility="gone"
+                    tools:ignore="HardcodedText" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/lastRemarkTVID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/leadMobileTVID"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:textColor="@color/gradientPrimary"
+                    android:visibility="gone"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/_10ssp"
+                    android:fontFamily="@font/roboto_regular" />
+
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/callLLID"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:orientation="horizontal">
+
+
+                <RelativeLayout
+                    android:id="@+id/whatsAppCallRLID"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:elevation="@dimen/_5sdp"
+                    android:gravity="center"
+                    tools:ignore="UnusedAttribute">
+
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/whatsapp"
+                        android:contentDescription="@string/app_name" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/cubeCallRLID"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:elevation="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:visibility="visible"
+                    tools:ignore="UnusedAttribute">
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/bg_cube_call">
+
+                        <ImageView
+                            android:layout_width="@dimen/_10sdp"
+                            android:layout_height="@dimen/_10sdp"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/_phone"
+                            android:backgroundTint="@color/white"
+                            android:contentDescription="@string/app_name" />
+
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/newPhoneRL"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:elevation="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:paddingEnd="@dimen/_5sdp"
+                    tools:ignore="RtlSymmetry,UselessParent">
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/bg_phone_circle_1">
+
+                        <ImageView
+                            android:layout_width="@dimen/_10sdp"
+                            android:layout_height="@dimen/_10sdp"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/_phone"
+                            android:backgroundTint="@color/white"
+                            android:contentDescription="@string/app_name" />
+
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:background="#b4b4b4"
+                android:visibility="visible" />
+
+
+
+        </RelativeLayout>
+
+
+
+</com.chauthai.swipereveallayout.SwipeRevealLayout>

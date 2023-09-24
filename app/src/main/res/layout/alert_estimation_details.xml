@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/alert_bg_">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="UselessParent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/head"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@drawable/header">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Product Details"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <RelativeLayout
+                    android:id="@+id/cancelRLID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:padding="@dimen/_10ssp"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="@dimen/_13sdp"
+                        android:layout_height="@dimen/_13sdp"
+                        android:background="@drawable/ic_cancel_music"
+                        android:backgroundTint="@color/white"
+                        android:contentDescription="@string/app_name"
+                        tools:ignore="UnusedAttribute" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/edit_b"/>
+
+            <LinearLayout
+                android:id="@+id/leadDetailsLLID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/productNameID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:padding="@dimen/_3sdp"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:paddingEnd="@dimen/_4sdp"
+                    android:text="@string/app_name"
+                    android:textColor="@color/edit_4"
+                    android:textSize="@dimen/_12ssp" />
+
+                <TextView
+                    android:id="@+id/quantityID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:padding="@dimen/_3sdp"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:paddingEnd="@dimen/_4sdp"
+                    android:text="@string/app_name"
+                    android:textColor="@color/edit_4"
+                    android:textSize="@dimen/_12ssp" />
+
+                <TextView
+                    android:id="@+id/priceID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:padding="@dimen/_3sdp"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:paddingEnd="@dimen/_4sdp"
+                    android:text="@string/app_name"
+                    android:textColor="@color/edit_4"
+                    android:textSize="@dimen/_12ssp" />
+
+                <TextView
+                    android:id="@+id/amountID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:paddingEnd="@dimen/_4sdp"
+                    android:text="@string/app_name"
+                    android:textColor="@color/edit_4"
+                    android:padding="@dimen/_3sdp"
+                    android:textSize="@dimen/_12ssp" />
+
+                <TextView
+                    android:id="@+id/gstID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:paddingEnd="@dimen/_4sdp"
+                    android:padding="@dimen/_3sdp"
+                    android:text="@string/app_name"
+                    android:visibility="gone"
+                    android:textColor="@color/edit_4"
+                    android:textSize="@dimen/_12ssp" />
+
+                <TextView
+                    android:id="@+id/grandAmountID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:paddingEnd="@dimen/_4sdp"
+                    android:text="@string/app_name"
+                    android:visibility="gone"
+                    android:textColor="@color/edit_4"
+                    android:padding="@dimen/_3sdp"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_13ssp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:background="@color/edit_4"
+                    android:layout_marginTop="@dimen/_5sdp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+                    <RelativeLayout
+                        android:id="@+id/editRLID"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+
+                        <ImageView
+                            android:contentDescription="@string/app_name"
+                            android:layout_width="@dimen/_18sdp"
+                            android:layout_height="@dimen/_18sdp"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/ic_edit"
+                            android:backgroundTint="@color/edit_4"
+                            tools:ignore="UnusedAttribute" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="@dimen/_1sdp"
+                        android:layout_height="match_parent"
+                        android:background="@color/edit_4"/>
+
+                    <RelativeLayout
+                        android:id="@+id/deleteRLID"
+                        android:layout_width="0dp"
+                        android:background="@drawable/bg_back"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+
+                        <ImageView
+                            android:contentDescription="@string/app_name"
+                            android:layout_width="@dimen/_18sdp"
+                            android:layout_height="@dimen/_18sdp"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/ic_delete"
+                            android:backgroundTint="@color/red_main"
+                            tools:ignore="UnusedAttribute" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

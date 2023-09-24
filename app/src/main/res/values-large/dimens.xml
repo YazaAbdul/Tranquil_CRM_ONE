@@ -1,0 +1,26 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <!--<dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>-->
+    <dimen name="full_screentoolbar_width">170dp</dimen>
+    <dimen name="backarrow_screentoolbar_width">170dp</dimen>
+    <dimen name="navcon_screentoolbar_width">170dp</dimen>
+    <dimen name="backarroe_search_screentoolbar_width">170dp</dimen>
+
+    <dimen name="viewpagermargintop">0dp</dimen>
+    <dimen name="toolbarwidth">80dp</dimen>
+    <dimen name="toolbarwidthimage">300dp</dimen>
+    <dimen name="toolbaricon">35dp</dimen>
+    <dimen name="toolbarwidthtabs">60dp</dimen>
+    <dimen name="toolbarmarginend">15dp</dimen>
+    <dimen name="displaypadding">10dp</dimen>
+    <dimen name="imagesize">45dp</dimen>
+    <dimen name="edit_image_width">100dp</dimen>
+    <dimen name="margin_start_for_all">25dp</dimen>
+    <dimen name="edit_cir_image_width">120dp</dimen>
+    <dimen name="app_camera_height">240dp</dimen>
+    <dimen name="bottom_height">180dp</dimen>
+    <dimen name="_230dp">300dp</dimen>
+
+</resources>

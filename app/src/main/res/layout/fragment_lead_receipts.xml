@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="fill_vertical"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_28sdp"
+                        android:background="@color/edit_f7"
+                        android:orientation="horizontal"
+                        android:weightSum="8">
+
+
+                        <TextView
+                            android:id="@+id/tittleID"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.5"
+                            android:fontFamily="@font/roboto_regular"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:text="#"
+                            android:textColor="@color/edit_4"
+                            android:textSize="@dimen/_10ssp"
+                            android:paddingStart="@dimen/_4sdp"
+                            tools:ignore="HardcodedText,RtlSymmetry" />
+
+                        <TextView
+                            android:layout_width="@dimen/_80sdp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/roboto_regular"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:text="Created On"
+                            android:textColor="@color/edit_4"
+                            android:textSize="@dimen/_10ssp"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:layout_width="@dimen/_80sdp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/roboto_regular"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:text="Created By"
+                            android:textColor="@color/edit_4"
+                            android:textSize="@dimen/_10ssp"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:id="@+id/quotationTVID"
+                            android:layout_width="@dimen/_80sdp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/roboto_regular"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:text="Mode"
+                            android:textColor="@color/edit_4"
+                            android:textSize="@dimen/_10ssp"
+                            tools:ignore="HardcodedText" />
+
+
+
+                        <TextView
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/roboto_regular"
+                            android:gravity="center"
+                            android:text="Bank"
+                            android:textColor="@color/edit_4"
+                            android:textSize="@dimen/_10ssp"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:id="@+id/proformaTVID"
+                            android:layout_width="@dimen/_80sdp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/roboto_regular"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:text="Reference"
+                            android:textColor="@color/edit_4"
+                            android:textSize="@dimen/_10ssp"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:id="@+id/invoiceTVID"
+                            android:layout_width="@dimen/_80sdp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/roboto_regular"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:text="Amount"
+                            android:textColor="@color/edit_4"
+                            android:textSize="@dimen/_10ssp"
+                            tools:ignore="HardcodedText" />
+
+
+
+
+                        <RelativeLayout
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:background="@drawable/edit"
+                                android:layout_centerInParent="true"/>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <!--<TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/edit_b" />-->
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <crm.tranquil_sales_steer.data.requirements.ExpandableHeightGridView
+                            android:id="@+id/payableEXGVID"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:divider="@android:color/transparent"
+                            android:listSelector="@android:color/transparent"
+                            android:numColumns="1"
+                            android:smoothScrollbar="true"
+                            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_28sdp"
+                android:background="@color/edit_f7"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:visibility="gone"
+                tools:ignore="DisableBaselineAlignment,UselessParent">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/customerTVID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/roboto_regular"
+                        android:gravity="center"
+                        android:paddingStart="@dimen/_4sdp"
+                        android:paddingEnd="@dimen/_1sdp"
+                        android:text="Received Date"
+                        android:textColor="@color/edit_4"
+                        android:textSize="@dimen/_10ssp"
+                        android:textStyle="normal"
+                        tools:ignore="HardcodedText" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1.6"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/amountTVID"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:fontFamily="@font/roboto_regular"
+                            android:gravity="center_vertical"
+                            android:paddingStart="@dimen/_5sdp"
+                            android:paddingEnd="@dimen/_1sdp"
+                            android:text="Amount"
+                            android:textColor="@color/edit_4"
+                            android:textSize="@dimen/_10ssp"
+                            android:textStyle="normal"
+                            tools:ignore="HardcodedText" />
+
+                    </LinearLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4">
+
+                        <ImageView
+                            android:layout_width="@dimen/_9sdp"
+                            android:layout_height="@dimen/_9sdp"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/down"
+                            android:contentDescription="@string/app_name" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/edit_b" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <ProgressBar
+                    android:id="@+id/pb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/noDataImage"
+                    android:layout_width="@dimen/_65sdp"
+                    android:layout_height="@dimen/_65sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_45sdp"
+                    android:background="@drawable/oops_"
+                    android:contentDescription="@string/app_name"
+                    android:visibility="gone" />
+
+
+                <TextView
+                    android:id="@+id/noData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:gravity="center"
+                    android:text="@string/no_data_available"
+                    android:textColor="@color/edit_4"
+                    android:textSize="@dimen/_10ssp"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/totalLLID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_28sdp"
+                    android:background="@color/edit_f7"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    tools:ignore="DisableBaselineAlignment,UselessParent">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/roboto_regular"
+                            android:gravity="center"
+                            android:paddingStart="@dimen/_4sdp"
+                            android:paddingEnd="@dimen/_1sdp"
+                            android:text="Total "
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_10ssp"
+                            android:textStyle="normal"
+                            tools:ignore="HardcodedText" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1.6"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical"
+                            tools:ignore="NestedWeights">
+
+                            <TextView
+                                android:id="@+id/totalReceivedAmountTVID"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:fontFamily="@font/roboto_regular"
+                                android:gravity="center_vertical"
+                                android:paddingStart="@dimen/_5sdp"
+                                android:paddingEnd="@dimen/_1sdp"
+                                android:text="\u20B9 12500"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_10ssp"
+                                android:textStyle="normal"
+                                tools:ignore="HardcodedText" />
+
+                        </LinearLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.4"
+                            android:visibility="invisible">
+
+                            <ImageView
+                                android:layout_width="@dimen/_9sdp"
+                                android:layout_height="@dimen/_9sdp"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/down"
+                                android:contentDescription="@string/app_name" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/edit_b" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+</androidx.core.widget.NestedScrollView>

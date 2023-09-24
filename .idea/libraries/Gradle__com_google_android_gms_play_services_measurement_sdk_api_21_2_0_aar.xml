@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.android.gms:play-services-measurement-sdk-api:21.2.0@aar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../Tranquil Customer_New/caches/transforms-2/files-2.1/6e510801f99090769a7dc782ee9283b4/jetified-play-services-measurement-sdk-api-21.2.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../Tranquil Customer_New/caches/transforms-2/files-2.1/6e510801f99090769a7dc782ee9283b4/jetified-play-services-measurement-sdk-api-21.2.0/res" />
+      <root url="file://$PROJECT_DIR$/../../Tranquil Customer_New/caches/transforms-2/files-2.1/6e510801f99090769a7dc782ee9283b4/jetified-play-services-measurement-sdk-api-21.2.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../Tranquil Customer_New/caches/modules-2/files-2.1/com.google.android.gms/play-services-measurement-sdk-api/21.2.0/e30555d01f4b419de1eed6ceed27b98aedecf946/play-services-measurement-sdk-api-21.2.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>

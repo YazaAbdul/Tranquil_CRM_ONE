@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.takusemba:cropme:1.0.3@aar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../Tranquil Customer_New/caches/transforms-2/files-2.1/7d962e68e6f6b925d1d77e8b1ec3baa9/jetified-cropme-1.0.3/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../Tranquil Customer_New/caches/transforms-2/files-2.1/7d962e68e6f6b925d1d77e8b1ec3baa9/jetified-cropme-1.0.3/res" />
+      <root url="file://$PROJECT_DIR$/../../Tranquil Customer_New/caches/transforms-2/files-2.1/7d962e68e6f6b925d1d77e8b1ec3baa9/jetified-cropme-1.0.3/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../Tranquil Customer_New/caches/modules-2/files-2.1/com.github.takusemba/cropme/1.0.3/fdd428ee38a3f167cb21c28db4bdfccbfa7ec5c6/cropme-1.0.3-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../Tranquil Customer_New/caches/modules-2/files-2.1/com.github.takusemba/cropme/1.0.3/47fe528490e1d2e866f73a8caea14471ce2a8cb4/cropme-1.0.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

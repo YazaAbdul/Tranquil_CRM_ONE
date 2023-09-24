@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".ui.activities.templates.SendTemplatesActivity">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/header_attendance" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ScrollView
+            android:id="@+id/mainLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="UselessParent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_10sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                        tools:ignore="UselessParent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_regular"
+                            android:padding="3dp"
+                            android:text="Tittle"
+                            android:textColor="@color/edit_7"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:id="@+id/tittleTVID"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/bg_btn"
+                            android:fontFamily="@font/roboto_regular"
+                            android:padding="10dp"
+                            android:text="Tittle"
+                            android:textColor="@color/black"
+                            tools:ignore="HardcodedText" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/subjectLLID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="vertical"
+                        tools:ignore="UselessParent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_regular"
+                            android:padding="3dp"
+                            android:text="Subject"
+                            android:textColor="@color/edit_7"
+                            android:textSize="14sp"
+                            tools:ignore="HardcodedText" />
+
+                        <EditText
+                            android:id="@+id/subjectETID"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/bg_btn"
+                            android:fontFamily="@font/roboto_regular"
+                            android:hint="Subject"
+                            android:inputType="text"
+                            android:padding="10dp"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/edit_7"
+                            android:textSize="14sp"
+                            tools:ignore="Autofill,HardcodedText" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="vertical"
+                        tools:ignore="UselessParent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_regular"
+                            android:padding="3dp"
+                            android:text="Message"
+                            android:textColor="@color/edit_7"
+                            android:textSize="14sp"
+                            tools:ignore="HardcodedText" />
+
+                        <EditText
+                            android:id="@+id/messageETID"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/bg_btn"
+                            android:fontFamily="@font/roboto_regular"
+                            android:gravity="top"
+                            android:hint="Message"
+                            android:inputType="textMultiLine"
+                            android:paddingStart="@dimen/_8sdp"
+                            android:paddingTop="@dimen/_5sdp"
+                            android:paddingEnd="@dimen/_4sdp"
+                            android:paddingBottom="@dimen/_40sdp"
+                            android:scrollbars="vertical"
+                            android:singleLine="false"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/edit_7"
+                            android:textSize="14sp"
+                            tools:ignore="Autofill,HardcodedText" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/micLID"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:gravity="center"
+                        android:layout_gravity="end"
+                        android:orientation="vertical"
+                        tools:ignore="UnusedAttribute">
+
+                        <ImageView
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/ic_mic_24dp"
+                            android:backgroundTint="@color/black"
+                            tools:ignore="ContentDescription,UnusedAttribute" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/attachmentLLID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="vertical"
+                        tools:ignore="UselessParent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_regular"
+                            android:padding="3dp"
+                            android:text="Attachment"
+                            android:textColor="@color/edit_7"
+                            android:textSize="14sp"
+                            tools:ignore="HardcodedText" />
+
+                        <EditText
+                            android:id="@+id/attachmentETID"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/bg_btn"
+                            android:fontFamily="@font/roboto_regular"
+                            android:gravity="top"
+                            android:hint="Attachment"
+                            android:inputType="textMultiLine"
+                            android:padding="10dp"
+                            android:scrollbars="vertical"
+                            android:singleLine="false"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/edit_7"
+                            android:textSize="14sp"
+                            tools:ignore="Autofill,HardcodedText" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp">
+
+
+                        <crm.tranquil_sales_steer.data.requirements.ExpandableHeightGridView
+                            android:id="@+id/templatesEXCVID"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:numColumns="1"
+                            android:smoothScrollbar="true" />
+
+
+                        <ProgressBar
+                            android:id="@+id/pb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true" />
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+        <Button
+            android:id="@+id/fab_add"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:text="Add Templates"
+            android:background="@drawable/bg_all_btn"
+            android:textSize="@dimen/_12ssp"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/white"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:textAllCaps="true"
+            android:layout_alignParentBottom="true"
+            tools:ignore="HardcodedText" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:src="@drawable/fab_add"
+            android:backgroundTint="@color/black_n"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

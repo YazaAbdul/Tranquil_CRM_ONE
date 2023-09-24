@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/edit_f"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:id="@+id/welcomeTextTVID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:textSize="@dimen/_18ssp"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/_2sdp"
+            android:padding="@dimen/_20sdp"
+            android:text="Welcome to I Crm \n Quotations \n\n\n Create Quotations or price proposals with ease for your customers &amp; share them quickly from your smart phone"
+            android:fontFamily="sans-serif"
+            android:textColor="#AAAAAA"
+            tools:ignore="HardcodedText" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

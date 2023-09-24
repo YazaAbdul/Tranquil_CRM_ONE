@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.axet:lame:1.0.9@aar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../Tranquil Customer_New/caches/transforms-2/files-2.1/b7704da4d38ccc6bca0918177c33fae9/jetified-lame-1.0.9/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../Tranquil Customer_New/caches/transforms-2/files-2.1/b7704da4d38ccc6bca0918177c33fae9/jetified-lame-1.0.9/res" />
+      <root url="file://$PROJECT_DIR$/../../Tranquil Customer_New/caches/transforms-2/files-2.1/b7704da4d38ccc6bca0918177c33fae9/jetified-lame-1.0.9/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../Tranquil Customer_New/caches/modules-2/files-2.1/com.github.axet/lame/1.0.9/49ce05e1ea5b3f9bb767fe0a9aa496232ce81c00/lame-1.0.9-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../Tranquil Customer_New/caches/modules-2/files-2.1/com.github.axet/lame/1.0.9/fdb342c7687b55336dfddf392b9e20a5099e4dce/lame-1.0.9-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

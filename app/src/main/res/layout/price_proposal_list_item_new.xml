@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_2sdp"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_marginEnd="@dimen/_2sdp"
+        android:layout_marginBottom="@dimen/_2sdp"
+        app:cardCornerRadius="@dimen/_2sdp"
+        app:cardElevation="@dimen/_2sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/productNameTVID"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:text="product"
+            android:padding="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:textSize="@dimen/_9ssp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/bg_dark"
+            android:layout_marginLeft="@dimen/_3sdp"/>
+
+        <TextView
+            android:id="@+id/descriptionTVID"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:padding="@dimen/_1sdp"
+            android:layout_weight="1"
+            android:textSize="@dimen/_9ssp"
+            android:textColor="@color/bg_dark"
+            android:layout_marginLeft="@dimen/_3sdp"/>
+
+        <TextView
+            android:id="@+id/hsnTVID"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:text="HSN/SAC"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:padding="@dimen/_1sdp"
+            android:layout_weight="1"
+            android:textSize="@dimen/_9ssp"
+            android:textColor="@color/bg_dark"
+            android:layout_marginLeft="@dimen/_3sdp"/>
+
+        <TextView
+            android:id="@+id/productPriceTVID"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="wrap_content"
+            android:text="Rate"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:textSize="@dimen/_9ssp"
+            android:textColor="@color/bg_dark"
+            android:layout_marginLeft="@dimen/_3sdp"/>
+
+        <TextView
+            android:id="@+id/quantityTVID"
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="wrap_content"
+            android:text="Quantity"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:textSize="@dimen/_9ssp"
+            android:textColor="@color/bg_dark"
+            android:layout_marginLeft="@dimen/_3sdp"/>
+
+        <TextView
+            android:id="@+id/uomTVID"
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="wrap_content"
+            android:text="UOM"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:textSize="@dimen/_9ssp"
+            android:textColor="@color/bg_dark"
+            android:layout_marginLeft="@dimen/_3sdp"/>
+
+        <TextView
+            android:id="@+id/discountTVID"
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="wrap_content"
+            android:text="Discount"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:textSize="@dimen/_9ssp"
+            android:textColor="@color/bg_dark"
+            android:layout_marginLeft="@dimen/_3sdp"/>
+
+        <TextView
+            android:id="@+id/gstPerTVID"
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="wrap_content"
+            android:text="GST%"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:textSize="@dimen/_9ssp"
+            android:textColor="@color/bg_dark"
+            android:layout_marginLeft="@dimen/_3sdp"/>
+
+        <TextView
+            android:id="@+id/gstTotalTVID"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="match_parent"
+            android:text="GST Amount"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:padding="@dimen/_1sdp"
+            android:textSize="@dimen/_9ssp"
+            android:textColor="@color/bg_dark"/>
+
+        <TextView
+            android:id="@+id/totalAmountTVID"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:textSize="@dimen/_9ssp"
+            android:textColor="@color/bg_dark"
+            android:layout_marginLeft="@dimen/_3sdp"/>
+
+
+    </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

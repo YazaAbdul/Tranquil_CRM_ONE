@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_28sdp"
+        android:orientation="horizontal"
+        android:weightSum="8">
+
+        <TextView
+            android:id="@+id/quantityNumberID"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="1"
+            android:textColor="@color/edit_4"
+            android:textSize="@dimen/_10ssp"
+            android:paddingStart="@dimen/_4sdp"
+            tools:ignore="HardcodedText,RtlSymmetry" />
+
+
+        <TextView
+            android:id="@+id/dateID"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="29-jun-2019"
+            android:textColor="@color/edit_4"
+            android:textSize="@dimen/_10ssp"
+            tools:ignore="HardcodedText" />
+
+        <RelativeLayout
+            android:id="@+id/convertRLID"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:clickable="true"
+            android:visibility="visible"
+            android:foreground="?android:selectableItemBackground"
+            tools:ignore="KeyboardInaccessibleWidget,NestedWeights,UnusedAttribute">
+
+            <RelativeLayout
+                android:id="@+id/imageIDRLID"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/billTextTVID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:layout_centerVertical="true"
+                    android:maxLines="1"
+                    android:text="Bill"
+                    android:foreground="?selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:textSize="@dimen/_10ssp"
+                    tools:ignore="HardcodedText,UnusedAttribute"/>
+
+                <ImageView
+                    android:id="@+id/imageID"
+                    android:contentDescription="@string/app_name"
+                    android:layout_width="@dimen/_12sdp"
+                    android:layout_height="@dimen/_12sdp"
+                    android:layout_toEndOf="@+id/billTextTVID"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/download"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/imageID2RLID"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageID2"
+                    android:contentDescription="@string/app_name"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/success_"/>
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:id="@+id/quotationTVID"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="Quotation"
+            android:foreground="?selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:textSize="@dimen/_10ssp"
+            tools:ignore="HardcodedText,UnusedAttribute" />
+
+        <TextView
+            android:id="@+id/amountID"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="1000"
+            android:textColor="@color/edit_4"
+            android:textSize="@dimen/_10ssp"
+            tools:ignore="HardcodedText" />
+
+        <RelativeLayout
+            android:id="@+id/proformaMainRLID"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/proformaTVID"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="Proforma"
+                android:visibility="visible"
+                android:textColor="@color/edit_4"
+                android:textSize="@dimen/_10ssp"
+                tools:ignore="HardcodedText" />
+
+            <RelativeLayout
+                android:id="@+id/proformaRLID"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"/>
+
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/invoiceMainRLID"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/invoiceTVID"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="Invoice"
+                android:visibility="visible"
+                android:textColor="@color/edit_4"
+                android:textSize="@dimen/_10ssp"
+                tools:ignore="HardcodedText" />
+
+            <RelativeLayout
+                android:id="@+id/invoiceRLID"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"/>
+
+
+            </RelativeLayout>
+
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/viewRLID"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:clickable="true"
+            android:foreground="?android:selectableItemBackground"
+            android:gravity="center"
+            tools:ignore="KeyboardInaccessibleWidget,NestedWeights,UnusedAttribute">
+
+            <ImageView
+                android:contentDescription="@string/app_name"
+                android:layout_width="@dimen/_13sdp"
+                android:layout_height="@dimen/_13sdp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/view" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/createdTVID"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="center"
+            android:visibility="gone"
+            android:maxLines="1"
+            android:text="Created By"
+            android:textColor="@color/edit_4"
+            android:textSize="@dimen/_10ssp"
+            tools:ignore="HardcodedText" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/viewDisplayRLID"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_28sdp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:visibility="gone"
+        tools:ignore="DisableBaselineAlignment,UselessParent">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/billTVID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="center"
+                android:text="Bill #"
+                android:textColor="@color/edit_4"
+                android:textSize="@dimen/_10ssp"
+                android:textStyle="normal"
+                android:paddingStart="@dimen/_4sdp"
+                tools:ignore="HardcodedText,RtlSymmetry" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/dateTVID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="center"
+                android:paddingStart="@dimen/_5sdp"
+                android:paddingEnd="@dimen/_1sdp"
+                android:text="Date"
+                android:textColor="@color/edit_4"
+                android:textSize="@dimen/_10ssp"
+                android:textStyle="normal"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.6"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                tools:ignore="NestedWeights">
+
+                <TextView
+                    android:id="@+id/amountTVID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/roboto_regular"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/_5sdp"
+                    android:paddingEnd="@dimen/_1sdp"
+                    android:text="Amount"
+                    android:textColor="@color/edit_4"
+                    android:textSize="@dimen/_10ssp"
+                    android:textStyle="normal"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4">
+
+                <ImageView
+                    android:layout_width="@dimen/_9sdp"
+                    android:layout_height="@dimen/_9sdp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/down"
+                    android:contentDescription="@string/app_name" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/edit_b" />
+
+
+</LinearLayout>

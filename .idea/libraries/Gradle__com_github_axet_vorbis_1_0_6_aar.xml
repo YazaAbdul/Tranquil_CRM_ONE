@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.axet:vorbis:1.0.6@aar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../Tranquil Customer_New/caches/transforms-2/files-2.1/2b6078f83403f1c66a67630bb87292e1/jetified-vorbis-1.0.6/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../Tranquil Customer_New/caches/transforms-2/files-2.1/2b6078f83403f1c66a67630bb87292e1/jetified-vorbis-1.0.6/res" />
+      <root url="file://$PROJECT_DIR$/../../Tranquil Customer_New/caches/transforms-2/files-2.1/2b6078f83403f1c66a67630bb87292e1/jetified-vorbis-1.0.6/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../Tranquil Customer_New/caches/modules-2/files-2.1/com.github.axet/vorbis/1.0.6/ab1bd187f2a406f474d2e4365e084588e4249621/vorbis-1.0.6-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../Tranquil Customer_New/caches/modules-2/files-2.1/com.github.axet/vorbis/1.0.6/bc629622be5c3325c054af1577cae29b885e3afa/vorbis-1.0.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

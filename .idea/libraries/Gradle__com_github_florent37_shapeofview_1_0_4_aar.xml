@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.florent37:shapeofview:1.0.4@aar">
+    <ANNOTATIONS>
+      <root url="jar://$PROJECT_DIR$/../../Tranquil Customer_New/caches/transforms-2/files-2.1/2a2cd53ef8f1f5643b091390685fa742/jetified-shapeofview-1.0.4/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../Tranquil Customer_New/caches/transforms-2/files-2.1/2a2cd53ef8f1f5643b091390685fa742/jetified-shapeofview-1.0.4/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../Tranquil Customer_New/caches/transforms-2/files-2.1/2a2cd53ef8f1f5643b091390685fa742/jetified-shapeofview-1.0.4/res" />
+      <root url="file://$PROJECT_DIR$/../../Tranquil Customer_New/caches/transforms-2/files-2.1/2a2cd53ef8f1f5643b091390685fa742/jetified-shapeofview-1.0.4/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../Tranquil Customer_New/caches/modules-2/files-2.1/com.github.florent37/shapeofview/1.0.4/4f4e3b471ddf1d6ab07cd8274190ea72f990ba53/shapeofview-1.0.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

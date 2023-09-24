@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/availableProjectsRLID"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?selectableItemBackground"
+        tools:ignore="UnusedAttribute,UselessParent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/availabilityProjectsTVID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="Project 1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_11ssp"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:background="@drawable/ic_arrow_forward"
+            tools:ignore="ContentDescription" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/edit_b" />
+
+    </RelativeLayout>
+
+</LinearLayout>

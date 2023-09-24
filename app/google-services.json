@@ -1,0 +1,203 @@
+{
+  "project_info": {
+    "project_number": "1088793470040",
+    "project_id": "tranquil-notifications",
+    "storage_bucket": "tranquil-notifications.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1088793470040:android:bc519c4f23012afa37d62d",
+        "android_client_info": {
+          "package_name": "crm.precise_sales_steer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1088793470040-ndfgnn4bd4fovljp329uvbdl7on3f7uc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "crm.precise_sales_steer",
+            "certificate_hash": "734fed8589324259c0ca0b4074fa842dc3eaa7ce"
+          }
+        },
+        {
+          "client_id": "1088793470040-8ndaofcpl5ap4ccf3m171oka22mc1lid.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDt8O7dfuEGZrTK8RENVSftScI41o2UbUM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1088793470040-8ndaofcpl5ap4ccf3m171oka22mc1lid.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1088793470040:android:94e17bee84ce9d3a37d62d",
+        "android_client_info": {
+          "package_name": "crm.sales_steer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1088793470040-fau8on1t0ht7k7pkojquuhar4l0bp1pa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "crm.sales_steer",
+            "certificate_hash": "734fed8589324259c0ca0b4074fa842dc3eaa7ce"
+          }
+        },
+        {
+          "client_id": "1088793470040-m6pvc0j71oomnblk4l44pdaharkbh3nb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "crm.sales_steer",
+            "certificate_hash": "3e8c8549860948961622b9780ce03d0bda8203ab"
+          }
+        },
+        {
+          "client_id": "1088793470040-8ndaofcpl5ap4ccf3m171oka22mc1lid.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDt8O7dfuEGZrTK8RENVSftScI41o2UbUM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1088793470040-8ndaofcpl5ap4ccf3m171oka22mc1lid.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1088793470040:android:94c2c74cb5cefd1137d62d",
+        "android_client_info": {
+          "package_name": "crm.shelter_steer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1088793470040-4rb2ppunrs36hh3e6b5qkgfv79n0oek2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "crm.shelter_steer",
+            "certificate_hash": "3e8c8549860948961622b9780ce03d0bda8203ab"
+          }
+        },
+        {
+          "client_id": "1088793470040-8ndaofcpl5ap4ccf3m171oka22mc1lid.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDt8O7dfuEGZrTK8RENVSftScI41o2UbUM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1088793470040-8ndaofcpl5ap4ccf3m171oka22mc1lid.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1088793470040:android:8e1fef7c814e8e4e37d62d",
+        "android_client_info": {
+          "package_name": "crm.tranquil_sales_steer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1088793470040-bq5trhpmbnvihqqr472kul150i319agk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "crm.tranquil_sales_steer",
+            "certificate_hash": "734fed8589324259c0ca0b4074fa842dc3eaa7ce"
+          }
+        },
+        {
+          "client_id": "1088793470040-8ndaofcpl5ap4ccf3m171oka22mc1lid.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDt8O7dfuEGZrTK8RENVSftScI41o2UbUM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1088793470040-8ndaofcpl5ap4ccf3m171oka22mc1lid.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1088793470040:android:b873777f870a1d0a37d62d",
+        "android_client_info": {
+          "package_name": "tranquil.crm.tranquildemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1088793470040-f80fcqaa21kvmm380d6p25gj0ns0see3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "tranquil.crm.tranquildemo",
+            "certificate_hash": "3e8c8549860948961622b9780ce03d0bda8203ab"
+          }
+        },
+        {
+          "client_id": "1088793470040-8ndaofcpl5ap4ccf3m171oka22mc1lid.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDt8O7dfuEGZrTK8RENVSftScI41o2UbUM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1088793470040-8ndaofcpl5ap4ccf3m171oka22mc1lid.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

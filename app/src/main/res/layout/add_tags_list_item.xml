@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_2sdp"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_marginEnd="@dimen/_2sdp"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/_2sdp"
+        tools:ignore="UselessParent">
+
+        <RelativeLayout
+            android:id="@+id/tagBgID"
+            android:layout_width="@dimen/_33sdp"
+            android:layout_height="@dimen/_33sdp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_circle_tra"
+            android:gravity="center"
+            android:padding="@dimen/_3sdp"
+            tools:ignore="UselessParent">
+
+            <ImageView
+                android:id="@+id/selectedMarkID"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/verification_mark"
+                android:backgroundTint="@color/white"
+                android:contentDescription="@string/app_name"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

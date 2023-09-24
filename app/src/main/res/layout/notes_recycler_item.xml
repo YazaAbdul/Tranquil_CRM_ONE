@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="end"
+    android:gravity="end"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingEnd="@dimen/_10sdp"
+        android:layout_gravity="end"
+        android:background="@drawable/bg_login"
+        android:backgroundTint="#EFEEEE"
+        android:layout_margin="@dimen/_5sdp"
+        tools:ignore="RtlSymmetry">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileIVID"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"/>
+
+        <TextView
+            android:id="@+id/notesTVID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/profileIVID"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:textSize="@dimen/_10ssp"
+            android:layout_below="@+id/userNameTVID"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/userNameTVID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/profileIVID"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:textSize="@dimen/_9ssp"
+            android:text="Chandu"
+            android:textColor="@color/edit_b"
+            android:layout_marginBottom="@dimen/_5sdp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/dateTVID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_alignParentEnd="true"
+            android:textSize="@dimen/_9ssp"
+            android:text="10-06-2022"
+            android:textColor="@color/edit_b"
+            tools:ignore="HardcodedText" />
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

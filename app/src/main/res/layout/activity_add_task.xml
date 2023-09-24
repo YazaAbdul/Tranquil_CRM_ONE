@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_header">
+
+        <include layout="@layout/header_attendance" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="UselessParent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    tools:ignore="UselessParent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        tools:ignore="DisableBaselineAlignment">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.3">
+
+                            <ImageView
+                                android:layout_width="@dimen/_16sdp"
+                                android:layout_height="@dimen/_16sdp"
+                                android:layout_centerHorizontal="true"
+                                android:background="@drawable/task"
+                                android:contentDescription="@string/app_name" />
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.6"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_regular"
+                                android:text="What is to be done ?"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/_11ssp"
+                                android:textStyle="bold"
+                                tools:ignore="HardcodedText" />
+
+                            <EditText
+                                android:id="@+id/taskName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:hint="Enter Task Name"
+                                android:inputType="textPersonName"
+                                android:textColorHint="@color/edit_7"
+                                android:textSize="@dimen/_11ssp"
+                                tools:ignore="Autofill,HardcodedText,LabelFor" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        tools:ignore="DisableBaselineAlignment">
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.3">
+
+                            <ImageView
+                                android:layout_width="@dimen/_16sdp"
+                                android:layout_height="@dimen/_16sdp"
+                                android:layout_centerHorizontal="true"
+                                android:background="@drawable/_calender"
+                                android:contentDescription="@string/app_name" />
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:id="@+id/dateLLID"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.6"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_regular"
+                                android:text="Due date"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/_11ssp"
+                                android:textStyle="bold"
+                                tools:ignore="HardcodedText" />
+
+                            <EditText
+                                android:id="@+id/dateTVID"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:hint="Date not set"
+                                android:inputType="textPersonName"
+                                android:textColorHint="@color/edit_7"
+                                android:textSize="@dimen/_11ssp"
+                                tools:ignore="Autofill,HardcodedText,LabelFor" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        tools:ignore="DisableBaselineAlignment">
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.3">
+
+                            <ImageView
+                                android:layout_width="@dimen/_16sdp"
+                                android:layout_height="@dimen/_16sdp"
+                                android:layout_centerHorizontal="true"
+                                android:background="@drawable/time_"
+                                android:contentDescription="@string/app_name" />
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:id="@+id/timeLLID"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.6"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_regular"
+                                android:text="Time"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/_11ssp"
+                                android:textStyle="bold"
+                                tools:ignore="HardcodedText" />
+
+                            <EditText
+                                android:id="@+id/timeTVID"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:hint="Time not set"
+                                android:inputType="textPersonName"
+                                android:textColorHint="@color/edit_7"
+                                android:textSize="@dimen/_11ssp"
+                                tools:ignore="Autofill,HardcodedText,LabelFor" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        tools:ignore="DisableBaselineAlignment">
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.3">
+
+                            <ImageView
+                                android:layout_width="@dimen/_16sdp"
+                                android:layout_height="@dimen/_16sdp"
+                                android:layout_centerHorizontal="true"
+                                android:background="@drawable/repeat_i"
+                                android:contentDescription="@string/app_name" />
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:id="@+id/repeatLLID"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.6"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_regular"
+                                android:text="Repeat"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/_11ssp"
+                                android:textStyle="bold"
+                                tools:ignore="HardcodedText" />
+
+                            <EditText
+                                android:id="@+id/repeatTVID"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:hint="Enter Task Name"
+                                android:inputType="textPersonName"
+                                android:textColorHint="@color/edit_7"
+                                android:textSize="@dimen/_11ssp"
+                                tools:ignore="Autofill,HardcodedText,LabelFor" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</LinearLayout>

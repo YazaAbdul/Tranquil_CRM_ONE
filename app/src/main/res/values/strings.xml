@@ -1,0 +1,297 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="app_name" tools:ignore="MissingTranslation">Tranquil CRM ONE</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="nullerror">Some thing Went wrong at server side</string>
+    <string name="notada">No Data Available </string>
+    <string name="version">1</string>
+
+    <string name="tranquil">Tranquil Web Solutions</string>
+    <string name="powered">Powered by</string>
+    <string name="amount">1000</string>
+    <string name="mark">Mark Attendance</string>
+    <string name="punch">Punch Report</string>
+    <string name="myatte">My Attendance Calender</string>
+    <string name="myholi">My Holidays</string>
+    <string name="leave">Leave Request</string>
+    <string name="myacc">My Account</string>
+    <string name="name">User Name</string>
+    <string name="number">Number</string>
+    <string name="email">Email ID</string>
+    <string name="password">Password</string>
+    <string name="depertment">Department</string>
+    <string name="manager">Manager</string>
+    <string name="employee">Employee</string>
+
+    <string name="punchd">Punch Date</string>
+    <string name="view">View Punch</string>
+    <string name="reason">Reason</string>
+    <string name="puncht">Punch Time</string>
+    <string name="submit">Punch In</string>
+
+    <string name="area">Location</string>
+    <string name="address">Address</string>
+    <string name="notes">Notes</string>
+    <string name="punchout">Punch out</string>
+    <string name="get">Get Report</string>
+    <string name="in1time">In Time</string>
+    <string name="outtime">Out Time</string>
+    <string name="status">Status</string>
+    <string name="ente">Enter notes here</string>
+    <string name="year">Year</string>
+    <string name="yearn">2018</string>
+    <string name="fyear">Final Year</string>
+    <string name="fnyear">2017</string>
+    <string name="legend">Legend</string>
+    <string name="advanc">Advance/lop leave</string>
+    <string name="with">With Balance</string>
+    <string name="without">Without Balance</string>
+    <string name="leavename">Leave Name</string>
+    <string name="leavenamen">CL</string>
+    <string name="pending">Balance Leaves</string>
+    <string name="pendingc">01</string>
+    <string name="apply">Apply Leave</string>
+    <string name="site">Site visit Update</string>
+    <string name="pay">Pay Statement</string>
+    <string name="person">Enter name</string>
+    <string name="locat">To continue, turn on device location,which uses Google\'s location service</string>
+    <string name="locati">Your device will need to :</string>
+    <string name="locatio"><![CDATA[This may changes the location mode that you\'ve selected for your device.For details go to Settings > Location.]]></string>
+    <string name="locatiom">Use GPS</string>
+    <string name="today">Today</string>
+    <string name="pending1">Pending</string>
+    <string name="future">Future</string>
+    <string name="overall">Overall</string>
+    <string name="something">Something went wrong at server side</string>
+    <string name="cust">CustomerName</string>
+    <string name="month">Month</string>
+    <string name="perofer">Performance</string>
+    <string name="day">Day</string>
+    <string name="testing">testing</string>
+
+    <string-array name="navigation_drawer_items_array">
+        <item>Connect</item>
+        <item>Fixtures</item>
+        <item>Table</item>
+    </string-array>
+
+
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+    <string name="coming_soon">Coming Soon</string>
+    <string name="error_permission_is_off">No Permissions</string>
+    <string name="error_permission_denied">Permissions granted</string>
+    <string name="save1">Save</string>
+    <string name="upload_new">Upload New</string>
+    <string name="change">Change</string>
+    <string name="permission_necessary">Take Permissions</string>
+    <string name="content">Tranquil CRM Software Company is One of the Best Sales CRM Software company for CRM Solutions and Lead Management, helps to organize, automatize and contemporize business processes with best CRM solutions. Tranquil Sales CRM software is from the house of Tranquil Web Solutions, Hyderabad. Tranquil CRM Solutions process to manage customers activities, work on today activities, pending events, and future operations. Moreover, it is easy to access to send SMS and email with predefined templates, and contemporize business processes for an organization interaction with sales prospects, leads, and opportunities. Tranquil Sales CRM Software is an integration customized application development to provide a holistic overview of all kind of lead management, customer interactions and help businesses to constitute stronger relationships with their customers through Sales CRM Software. The solution comprises of a robust mechanism of automatized processes that countenances customer interactions through auto-responders.</string>
+    <string name="create_free_account_">Create Account</string>
+    <string name="phone">Mobile Number</string>
+    <string name="no_internet_tittle" tools:ignore="TypographyEllipsis">No Internet...!</string>
+    <string name="no_internet_des">Make sure your device is connected to internet</string>
+
+
+    <string name="action_discard_reminder">Discard Reminder</string>
+    <string name="action_save_reminder">Save Reminder</string>
+    <string name="remainders">My Remainders</string>
+    <string name="rate_des">5 star rating will help us to improve CRM and add Valuable features.Rate us now, and make CRM even better</string>
+    <string name="des">Dont hestiate to contact us if you have any questions \n we are always at your service \n Customer Name</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">START</string>
+    <string name="punchrequest">Punch Request</string>
+    <string name="tab2">Report</string>
+
+
+    <string name="enter_notes">Enter Notes</string>
+    <string name="assign">ASSIGN</string>
+    <string name="track">TRACK</string>
+    <string name="update">UPDATE</string>
+    <string name="complete">COMPLETE</string>
+
+    <string name="add_reminder">Reminder</string>
+    <string name="details">Details</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="repeat">Repeat</string>
+    <string name="repeat_off">Off</string>
+    <string name="repeat_no">Repetition Interval </string>
+    <string name="repeat_type">Type of Repetitions</string>
+    <string name="title_activity_add_reminder" translatable="false">Add Reminder</string>
+    <string name="title_activity_edit_reminder">Edit Reminder</string>
+    <string name="title_activity_licenses">Licenses</string>
+    <string name="no_internet_desc">Make sure your device is connected to internet</string>
+
+
+    <string name="slide_1_title">Sales + Mobile CRM</string>
+    <string name="slide_1_desc">Increase the sales velocity of your business with lead management</string>
+
+    <string name="slide_2_title">Tasks and Remainders</string>
+    <string name="slide_2_desc">Automatically set sales tasks when a relevant event occurs</string>
+
+    <string name="slide_3_title">Field Sales Tracking</string>
+    <string name="slide_3_desc">Complete field sales tracking ensures that ,managers know if their teams are attending meetings &amp; completing their tasks</string>
+
+    <string name="slide_4_title">Fast Delivery</string>
+    <string name="slide_4_desc">Blazing fast order delivery within time !</string>
+    <string name="opps">Oops...!</string>
+    <string name="no_task_to_show">No Tasks Available</string>
+    <string name="gps_network_not_enabled">Gps not activated</string>
+    <string name="open_location_settings">Open settings</string>
+    <string name="Cancel">Cancel</string>
+
+    <string name="first_name">First Name</string>
+    <string name="search_title">Search</string>
+    <string name="proceed">Proceed</string>
+    <string name="c_name">Company Name</string>
+    <string name="register">Register</string>
+    <string name="no_data_available">No Data Available</string>
+    <string name="share_using">Share Using</string>
+    <string name="temples">No Templates Available</string>
+    <string name="changeinfopage">Pages Position</string>
+    <string name="desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+    <string name="no_internet_title">No Internet Connection...!</string>
+    <string name="d">Update flow failed! Result code:</string>
+    <string name="update_downloaded">New Version Updated</string>
+    <string name="restart">RESTART</string>
+    <string name="choose_image_from">Choose Image From</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="close">Close</string>
+    <string name="suggestions_not_found">Suggestions not found</string>
+    <string name="desc_1">Tranquil Crm</string>
+    <string name="ok">OK</string>
+    <string name="profile_rating">Your Profile Rating</string>
+    <string name="app_name1">Crm Software</string>
+    <string name="alert">Alert...!</string>
+
+
+    <string-array name="source_text">
+        <item>Auto (default)</item>
+        <item>Voice Line</item>
+        <item>Mic</item>
+        <item>System Default</item>
+        <item>VoIP</item>
+        <item>Voice Recognition</item>
+        <item>Camcorder</item>
+        <item>System RAW</item>
+    </string-array>
+
+    <string-array name="sample_rate_text">
+        <item>48 kHz</item>
+        <item>44.1 kHz (CD)</item>
+        <item>32 kHz</item>
+        <item>22 kHz</item>
+        <item>16 kHz (default)</item>
+        <item>11 kHz</item>
+        <item>8 kHz (telephone)</item>
+    </string-array>
+
+    <string-array name="delete_text">
+        <item>Keep all recording</item>
+        <item>older than day</item>
+        <item>older than week</item>
+        <item>older than 1 month</item>
+        <item>older than 3 months</item>
+        <item>older than 6 months</item>
+    </string-array>
+
+    <string-array name="format_text">
+        <item>2017-02-01 09.08.01.wav</item>
+        <item>20170201T090801.wav</item>
+        <item>1512340435 [Phone].wav</item>
+        <item>2017-02-01 09.08.01 ↓↑ [Caller ID].wav</item>
+    </string-array>
+
+    <string-array name="channels_text">
+        <item>Mono (default)</item>
+        <item>Stereo</item>
+    </string-array>
+
+    <string name="accessibility_service_label">Calls Recording accesibility service</string>
+    <string name="accessibility_service_description">To allow call recording on Android 10+ in the background, enable this service.</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="call_recording">Calls Recording</string>
+    <string name="no_folder_app">No folder view application installed</string>
+    <string name="hold_by_call">pause (hold by call)</string>
+    <string name="encoding">encoding</string>
+    <string name="pause">pause</string>
+    <string name="edit">edit</string>
+    <string name="recording">recording</string>
+    <string name="encoding_title">Encoding...</string>
+    <string name="recording_title">Recording</string>
+    <string name="title_header">%1$s free ~ %2$s left</string>
+    <string name="open_recording_folder">Open Recording Folder</string>
+    <string name="recording_list_is_empty">Recording List is Empty\n\nCheck \'Calls Recording\' to Start Recording Calls</string>
+
+    <string name="source_default">(Default)</string>
+    <string name="source_mic">(Mic)</string>
+    <string name="source_line">(Voice Line)</string>
+
+    <string name="call_recordings_support">Call Recordings support</string>
+    <string name="call_recordings_support_text">Most phones do not support high-quality (phone line) call recording. To enable call recording, install open-source firmware, choose different encoding options (ogg, MediaRecorder…), different audio sources (phone line, microphone, VoIP…), or root your phone.</string>
+    <string name="recordings_quality">Recordings Quality</string>
+    <string name="recordings_quality_text">If your phone does not support high quality call recording, the application will try MIC call recording (you may hear only one side: your or your interlocutor).</string>
+    <string name="task_managers">Task Managers</string>
+    <string name="task_managers_text">If your phone has battery optimization or task managers enabled, consider disabling them to keep the application running in the background (optional)</string>
+
+    <string name="recording_enabled">Recording enabled</string>
+    <string name="recording_disabled">Recording disabled</string>
+    <string name="callrecent_auto_save">Auto save in (%1$d)</string>
+    <string name="calls_out">Out</string>
+    <string name="calls_in">In</string>
+    <string name="save_button">Save</string>
+    <string name="mixer_paths_done">System mixer configured. Please reboot!</string>
+    <string name="mixer_paths_failed">Unable to configure system mixer</string>
+
+    <string name="pref_storage_title">Storage Path</string>
+    <string name="pref_rate_title">Sample Rate</string>
+    <string name="pref_encoding_title">Encoding</string>
+    <string name="pref_encoding_summary">Output file formats (.wav, .m4a, ...)</string>
+    <string name="pref_mode_title">Mode</string>
+    <string name="pref_mode_summary">Recording channels</string>
+    <string name="pref_delete_title">Delete Recordings</string>
+    <string name="pref_nameformat_title">Name Format</string>
+    <string name="pref_calldialog_title">Recent Call Dialog</string>
+    <string name="pref_calldialog_summary">Show rename / favorite dialog after call ended</string>
+    <string name="pref_optimization_title">Disable Battery Optimization</string>
+    <string name="pref_optimization_summary">Prevent app from being removed from memory</string>
+    <string name="pref_theme_title">Application Theme</string>
+    <string name="pref_theme_summary">Set application theme (dark / light)</string>
+    <string name="pref_mixerpaths_title">System Mixer Incall Recording</string>
+    <string name="pref_mixerpaths_summary">Allow system mixer to record calls for regular apps</string>
+    <string name="pref_recordings">Recordings</string>
+    <string name="pref_advanced">Advanced</string>
+    <string name="pref_application">Application</string>
+    <string name="menu_search">Search</string>
+    <string name="send_survey">Send Survey</string>
+    <string name="survey_know_issues">Know Issues:</string>
+    <string name="survey_none">No survey\'s</string>
+    <string name="survey_bad">Not working</string>
+    <string name="survey_good">Working</string>
+    <string name="survey_few_issues">Few issues</string>
+    <string name="survey_view">View Survey\'s</string>
+    <string name="survey_status">Status:</string>
+    <string name="sort_by_contact_z_a">Contact Z-A</string>
+    <string name="sort_by_contact_a_z">Contact A-Z</string>
+    <string name="enabled">Enabled</string>
+    <string name="disabled">Disabled</string>
+    <string name="not_permitted">Not permitted</string>
+    <string name="delete_recording">Delete Recording</string>
+    <string name="are_you_sure">Are you sure?</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_topic_details">TopicDetailsActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+</resources>
+

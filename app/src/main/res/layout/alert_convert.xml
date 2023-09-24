@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingTop="@dimen/_15sdp"
+        android:paddingBottom="@dimen/_15sdp"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Convert to "
+                android:textColor="@color/bg_dark"
+                android:textSize="@dimen/_15ssp"
+                android:fontFamily="@font/roboto_regular"
+                android:padding="@dimen/_8sdp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="end"
+                android:gravity="end">
+
+                <TextView
+                    android:id="@+id/invoiceTVID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Invoice "
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/_13ssp"
+                    android:visibility="visible"
+                    android:fontFamily="@font/roboto_regular"
+                    android:padding="@dimen/_8sdp"
+                    android:foreground="?selectableItemBackground"
+                    android:clickable="true"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText,KeyboardInaccessibleWidget,UnusedAttribute" />
+
+                <TextView
+                    android:id="@+id/invoiceSuccessTVID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Invoice Converted"
+                    android:textColor="@color/green_light1"
+                    android:textSize="@dimen/_13ssp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:padding="@dimen/_8sdp"
+                    android:foreground="?selectableItemBackground"
+                    android:clickable="true"
+                    android:visibility="gone"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText,KeyboardInaccessibleWidget,UnusedAttribute" />
+
+
+                <TextView
+                    android:id="@+id/proformaTVID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Proforma Invoice "
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/_13ssp"
+                    android:visibility="visible"
+                    android:fontFamily="@font/roboto_regular"
+                    android:padding="@dimen/_8sdp"
+                    android:foreground="?selectableItemBackground"
+                    android:clickable="true"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText,KeyboardInaccessibleWidget,UnusedAttribute" />
+
+                <TextView
+                    android:id="@+id/proformaSuccessTVID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Proforma Invoice Converted"
+                    android:textColor="@color/green_light1"
+                    android:textSize="@dimen/_13ssp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:padding="@dimen/_8sdp"
+                    android:visibility="gone"
+                    android:foreground="?selectableItemBackground"
+                    android:clickable="true"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText,KeyboardInaccessibleWidget,UnusedAttribute" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

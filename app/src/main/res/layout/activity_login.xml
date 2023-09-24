@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.3">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/logo"
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="@dimen/_45sdp"
+                        android:layout_centerHorizontal="true"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/striplogo" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_55sdp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="Login"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_16ssp"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        tools:ignore="HardcodedText" />
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_25sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_25sdp"
+                    android:orientation="vertical"
+                    tools:ignore="UselessLeaf">
+                    <LinearLayout
+                        android:id="@+id/companyLLID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:background="@drawable/bg_login"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.3">
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:layout_width="14dp"
+                                    android:layout_height="9dp"
+                                    android:layout_centerInParent="true"
+                                    android:background="@drawable/key"
+                                    android:contentDescription="@string/app_name"
+                                    tools:ignore="UnusedAttribute" />
+
+                            </RelativeLayout>
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/companyETID"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1.7"
+                                android:backgroundTint="@android:color/transparent"
+                                android:fontFamily="@font/roboto_regular"
+                                android:gravity="center_vertical"
+                                android:hint="Company ID"
+                                android:inputType="text"
+                                android:paddingStart="@dimen/_8sdp"
+                                android:paddingEnd="@dimen/_8sdp"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/edittext"
+                                android:textSize="@dimen/_12ssp"
+                                android:textStyle="normal"
+                                />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1sdp"
+                            android:background="#b4b4b4"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/emailLLID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginTop="@dimen/_5ssp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:background="@drawable/bg_login"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.3">
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:layout_width="@dimen/_12sdp"
+                                    android:layout_height="@dimen/_12sdp"
+                                    android:layout_centerInParent="true"
+                                    android:background="@drawable/email_"
+                                    android:contentDescription="@string/app_name"
+                                    tools:ignore="UnusedAttribute" />
+
+                            </RelativeLayout>
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/emailETID"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1.7"
+                                android:backgroundTint="@android:color/transparent"
+                                android:fontFamily="@font/roboto_regular"
+                                android:gravity="center_vertical"
+                                android:hint="@string/email"
+                                android:inputType="textWebEmailAddress"
+                                android:paddingStart="@dimen/_8sdp"
+
+                                android:paddingEnd="@dimen/_8sdp"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/edittext"
+                                android:textSize="@dimen/_12ssp"
+                                android:textStyle="normal"
+                                tools:ignore="Autofill,UnusedAttribute" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1sdp"
+                            android:background="#b4b4b4"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/passwordLLID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:background="@drawable/bg_login"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.3">
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:layout_width="@dimen/_12sdp"
+                                    android:layout_height="@dimen/_12sdp"
+                                    android:layout_centerInParent="true"
+                                    android:background="@drawable/lock"
+                                    android:contentDescription="@string/app_name"
+                                    tools:ignore="UnusedAttribute" />
+
+                            </RelativeLayout>
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/passwordETID"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1.7"
+
+                                android:backgroundTint="@android:color/transparent"
+                                android:fontFamily="@font/roboto_regular"
+                                android:gravity="center_vertical"
+                                android:hint="@string/password"
+                                android:inputType="textPassword"
+                                android:paddingStart="@dimen/_8sdp"
+                                android:paddingEnd="@dimen/_8sdp"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/edittext"
+                                android:textSize="@dimen/_12ssp"
+                                android:textStyle="normal"
+                                tools:ignore="Autofill,UnusedAttribute" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1sdp"
+                            android:background="#b4b4b4"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/registerBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:background="@drawable/bg_login"
+                        android:backgroundTint="@color/white"
+                        android:elevation="@dimen/_5sdp"
+                        android:text="Login"
+                        android:visibility="gone"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12ssp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText,UnusedAttribute" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_45sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/signUp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:background="@drawable/bg_back"
+                        android:fontFamily="@font/roboto_regular"
+                        android:gravity="start"
+                        android:padding="@dimen/_5sdp"
+                        android:text="Sign Up"
+                        android:textColor="@color/bg_dark"
+                        android:textSize="@dimen/_11ssp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/forGot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="end"
+                        android:background="@drawable/bg_back"
+                        android:fontFamily="@font/roboto_regular"
+                        android:gravity="end"
+                        android:padding="@dimen/_5sdp"
+                        android:text="Forgot Password"
+                        android:textColor="@color/bg_dark"
+                        android:textSize="@dimen/_11ssp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/vTVID"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_25sdp"
+            android:visibility="gone"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="74dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/singupTVID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:text="New User? Singup" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/vTVID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_6sdp"
+            android:text="version"
+
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

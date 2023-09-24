@@ -1,0 +1,35 @@
+package crm.tranquil_sales_steer.ui.models;
+
+/**
+ * Created by venkei on 06-Jul-19.
+ */
+public class ActivityMainResponse {
+
+    private String activity_id;
+    private String activity_name;
+
+    public ActivityMainResponse(String activity_id, String activity_name) {
+        this.activity_id = activity_id;
+        this.activity_name = activity_name;
+    }
+
+    public ActivityMainResponse() {
+
+    }
+
+    public String getActivity_id() {
+        return activity_id;
+    }
+
+    public void setActivity_id(String activity_id) {
+        this.activity_id = activity_id;
+    }
+
+    public String getActivity_name() {
+        return activity_name;
+    }
+
+    public void setActivity_name(String activity_name) {
+        this.activity_name = activity_name;
+    }
+}

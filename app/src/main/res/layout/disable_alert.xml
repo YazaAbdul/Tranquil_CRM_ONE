@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_all_btn"
+        android:backgroundTint="@color/white"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_25sdp"
+            android:background="@color/blue"
+            android:textColor="@color/white"
+            android:text="Reason for Not Interested ?"
+            android:textSize="@dimen/_14ssp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textAllCaps="true"
+            tools:ignore="HardcodedText" />
+
+        <RelativeLayout
+            android:id="@+id/reasonRLID"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:background="@drawable/bg_login"
+            android:layout_marginTop="@dimen/_15sdp">
+
+   <!--         <TextView
+                android:id="@+id/ReasonTVID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toEndOf="@+id/reasonsSPID"
+                android:fontFamily="@font/roboto_regular"
+                android:text="Test Reason"
+                android:visibility="gone"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/_12ssp"
+                tools:ignore="HardcodedText" />-->
+
+
+            <Spinner
+                android:id="@+id/reasonsSPID"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="match_parent"
+                android:overlapAnchor="false">
+
+            </Spinner>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp">
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/reasonTVID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="Select Reason"
+                tools:ignore="HardcodedText"
+                android:visibility="visible"
+                android:fontFamily="@font/roboto_regular"
+                android:textSize="@dimen/_12ssp" />
+
+            <ImageView
+                android:contentDescription="@string/app_name"
+                android:layout_width="@dimen/_6sdp"
+                android:layout_height="@dimen/_6sdp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:background="@drawable/down"/>
+        </RelativeLayout>
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/otherReasonETID"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/bg_login"
+            android:hint="Enter Other Reasons"
+            android:paddingStart="@dimen/_5sdp"
+            android:inputType="text"
+            android:visibility="gone"
+            tools:ignore="HardcodedText,RtlSymmetry"/>
+
+
+        <EditText
+            android:id="@+id/noteETID"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/bg_login"
+            android:hint="Enter Notes"
+            android:paddingStart="@dimen/_5sdp"
+            android:inputType="text"
+            tools:ignore="HardcodedText,RtlSymmetry"/>
+
+
+        <Button
+            android:id="@+id/removeBtn"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/bg_new_login"
+            android:backgroundTint="@color/blue"
+            android:textColor="@color/white"
+            android:text="Disable"
+            android:layout_marginEnd="@dimen/_10sdp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

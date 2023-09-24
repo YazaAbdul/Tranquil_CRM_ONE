@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.dashboard.NextCallActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/textColor"
+            android:fontFamily="@font/roboto_regular"
+            android:layout_marginTop="@dimen/_35sdp"
+            android:textSize="@dimen/_14ssp"
+            android:text="Next Customer is"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/customerNameTVID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/colorCard"
+            android:textSize="@dimen/_16ssp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Customer Name"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/nextCallBtn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:background="@drawable/bg_all_btn"
+            android:backgroundTint="@color/blue"
+            android:text="Click here to make a call"
+            android:textColor="@color/white"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/skipBtn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:background="@drawable/bg_all_btn"
+            android:backgroundTint="@color/edit_b"
+            android:text="Skip to next call"
+            android:textColor="@color/colorCard"
+            tools:ignore="HardcodedText" />
+
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/pb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/activitiesTVID"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="@dimen/_15ssp"
+            android:textColor="@color/red_main"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Go to Activities"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/dashBoardTVID"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="@dimen/_15ssp"
+            android:textColor="@color/red_main"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Go to Dashboard"
+            tools:ignore="HardcodedText" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

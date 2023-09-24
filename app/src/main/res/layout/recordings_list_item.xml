@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_marginEnd="@dimen/_6sdp"
+        android:layout_marginBottom="@dimen/_2sdp"
+        app:cardCornerRadius="@dimen/_1sdp"
+        app:cardElevation="@dimen/_2sdp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/_5sdp"
+            android:weightSum="3"
+            tools:ignore="DisableBaselineAlignment">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.4"
+                android:gravity="center_horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/imageViewIcon"
+                    android:layout_width="@dimen/_34sdp"
+                    android:layout_height="@dimen/_34sdp"
+                    android:background="@drawable/bg_transparent_circle"
+                    tools:ignore="ContentDescription">
+
+                    <TextView
+                        android:id="@+id/iconTitleID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/sansation_regular"
+                        android:gravity="center"
+                        android:maxLength="1"
+                        android:text="A"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_10ssp"
+                        tools:ignore="HardcodedText" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.3"
+                android:paddingStart="@dimen/_8sdp"
+                android:paddingEnd="@dimen/_10sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@+id/audioLLID"
+                    android:gravity="top"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/customerNameTVID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sansation_regular"
+                        android:maxLines="1"
+                        android:text="@string/app_name"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_11ssp" />
+
+                    <TextView
+                        android:id="@+id/callByTVID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:fontFamily="@font/sansation_regular"
+                        android:maxLines="1"
+                        android:visibility="gone"
+                        android:text="@string/app_name"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/_9ssp" />
+
+                    <LinearLayout
+                        android:id="@+id/phoneLLID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <ImageView
+                            android:layout_width="@dimen/_8sdp"
+                            android:layout_height="@dimen/_8sdp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/ic_phone_receiver"
+                            android:textColor="@color/textColor"
+                            android:contentDescription="@string/app_name" />
+
+                        <TextView
+                            android:id="@+id/customerMobileTVID"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_3sdp"
+                            android:fontFamily="@font/sansation_regular"
+                            android:maxLines="1"
+                            android:text="@string/app_name"
+                            android:textColor="@color/textColor"
+                            android:textSize="@dimen/_9ssp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/_10sdp"
+                            android:layout_height="@dimen/_10sdp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/cal_"
+                            android:textColor="@color/textColor"
+                            android:contentDescription="@string/app_name" />
+
+                        <TextView
+                            android:id="@+id/callDateTVID"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/_3sdp"
+                            android:fontFamily="@font/sansation_regular"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:text="@string/app_name"
+                            android:textColor="@color/textColor"
+                            android:textSize="@dimen/_9ssp" />
+
+
+                        <ImageView
+                            android:layout_width="@dimen/_9sdp"
+                            android:layout_height="@dimen/_9sdp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/_3sdp"
+                            android:background="@drawable/time_"
+                            android:textColor="@color/textColor"
+                            android:contentDescription="@string/app_name" />
+
+                        <TextView
+                            android:id="@+id/callTimeTVID"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/_3sdp"
+                            android:fontFamily="@font/sansation_regular"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:text="@string/app_name"
+                            android:textColor="@color/textColor"
+                            android:textSize="@dimen/_9ssp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/projectTVID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:fontFamily="@font/sansation_regular"
+                        android:maxLines="1"
+                        android:visibility="gone"
+                        android:text="@string/app_name"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/_9ssp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/audioLLID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/play_button"
+                        android:backgroundTint="@color/logoColor1"
+                        android:contentDescription="@string/app_name" />
+
+                    <TextView
+                        android:id="@+id/durationTVID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:fontFamily="@font/sansation_regular"
+                        android:text="00:00"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_9ssp"
+                        tools:ignore="HardcodedText" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/callID"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3">
+
+                <ImageView
+                    android:layout_width="@dimen/_13sdp"
+                    android:layout_height="@dimen/_13sdp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/_phone"
+                    android:backgroundTint="@color/textColor"
+                    android:contentDescription="@string/app_name" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

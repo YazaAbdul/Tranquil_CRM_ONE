@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_40sdp"
+    android:background="@drawable/bg_gradient_main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        tools:ignore="UselessParent">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:layout_weight="0.45">
+
+            <RelativeLayout
+                android:id="@+id/backRLID"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                tools:ignore="KeyboardInaccessibleWidget,UnusedAttribute">
+
+                <ImageView
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/ic_backarrow"
+                    android:backgroundTint="@color/white"
+                    android:contentDescription="@string/app_name"
+                    tools:ignore="UnusedAttribute" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/headerTittleTVID"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2.1"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:paddingStart="@dimen/_1sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:textAllCaps="false"
+            android:text="Header"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp"
+            tools:ignore="HardcodedText" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.45"
+            android:visibility="visible"
+            android:background="@drawable/bg_back">
+
+            <RelativeLayout
+                android:id="@+id/callRLID"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_centerInParent="true"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?selectableItemBackground"
+                android:visibility="gone"
+                tools:ignore="UnusedAttribute">
+
+                <ImageView
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/_phone"
+                    android:contentDescription="@string/app_name"
+                    android:backgroundTint="@color/white"/>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_back">
+
+                <RelativeLayout
+                    android:id="@+id/okRLID"
+                    android:layout_width="@dimen/_42sdp"
+                    android:layout_height="@dimen/_42sdp"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="@dimen/_18ssp"
+                        android:layout_height="@dimen/_18ssp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/verification_mark"
+                        android:backgroundTint="@color/white"
+                        android:contentDescription="@string/app_name"
+                        tools:ignore="UnusedAttribute" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/okDisRLID"
+                    android:layout_width="@dimen/_42sdp"
+                    android:layout_height="@dimen/_42sdp"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="@dimen/_18ssp"
+                        android:layout_height="@dimen/_18ssp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/verification_mark"
+                        android:backgroundTint="@color/textColor"
+                        android:contentDescription="@string/app_name"
+                        tools:ignore="UnusedAttribute" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/searchRLID"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_back"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="@dimen/_18ssp"
+                    android:layout_height="@dimen/_18ssp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/ic_magnifier_tool_white"
+                    android:backgroundTint="@color/white"
+                    android:contentDescription="@string/app_name"
+                    tools:ignore="UnusedAttribute" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.appbar.AppBarLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <gradient android:startColor="#535353" android:endColor="#535353"
+        android:angle="90"/>
+<!--    <gradient android:startColor="#700EC5A0" android:endColor="#51E60404"
+        android:angle="90"/>-->
+
+
+    <corners android:bottomRightRadius="@dimen/_45sdp"/>
+
+
+
+
+
+
+</shape>
+<!--<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item>
+        <shape android:shape="rectangle" android:padding="100dp">
+
+        </shape>
+        <corners android:bottomRightRadius="50dp"/>
+    </item>
+    <item android:drawable="@drawable/glssy6" />
+</layer-list>-->

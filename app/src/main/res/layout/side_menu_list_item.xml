@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F1EBE5"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+android:layout_marginLeft="@dimen/_10sdp"
+        android:background="#F1EBE5"
+        tools:ignore="KeyboardInaccessibleWidget,UnusedAttribute">
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="match_parent"
+            android:background="#747474"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/imageViewIcon"
+            android:layout_width="15dp"
+            android:layout_height="14dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_10sdp"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="22dp"
+            android:layout_toEndOf="@+id/imageViewIcon"
+            android:fontFamily="@font/roboto_regular"
+            android:text="Item Name"
+            android:textAppearance="?android:attr/textAppearanceListItemSmall"
+            android:textColor="@color/edit_4"
+            android:textSize="@dimen/_12ssp"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:background="@drawable/ic_right_arrow"
+            android:backgroundTint="@color/black" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1ssp"
+        android:visibility="gone"
+        android:background="#b4b4b4" />
+
+</LinearLayout>

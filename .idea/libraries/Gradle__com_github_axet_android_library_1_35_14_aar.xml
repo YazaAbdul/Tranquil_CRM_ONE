@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.axet:android-library:1.35.14@aar">
+    <ANNOTATIONS>
+      <root url="jar://$PROJECT_DIR$/../../Tranquil Customer_New/caches/transforms-2/files-2.1/eee2ba5bc5838ce103a1ea638739ba13/jetified-android-library-1.35.14/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../Tranquil Customer_New/caches/transforms-2/files-2.1/eee2ba5bc5838ce103a1ea638739ba13/jetified-android-library-1.35.14/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../Tranquil Customer_New/caches/transforms-2/files-2.1/eee2ba5bc5838ce103a1ea638739ba13/jetified-android-library-1.35.14/res" />
+      <root url="file://$PROJECT_DIR$/../../Tranquil Customer_New/caches/transforms-2/files-2.1/eee2ba5bc5838ce103a1ea638739ba13/jetified-android-library-1.35.14/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../Tranquil Customer_New/caches/modules-2/files-2.1/com.github.axet/android-library/1.35.14/f0e78b7d4fee619364947972a26f7417cf22bde4/android-library-1.35.14-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../Tranquil Customer_New/caches/modules-2/files-2.1/com.github.axet/android-library/1.35.14/3986eccb9ea0a17ec629695c82a6e80e2cf6e87c/android-library-1.35.14-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

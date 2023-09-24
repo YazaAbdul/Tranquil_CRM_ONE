@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_1sdp"
+        android:elevation="@dimen/_4sdp"
+        app:cardCornerRadius="@dimen/_4sdp"
+        app:cardElevation="@dimen/_4sdp"
+        tools:ignore="UselessParent">
+
+        <RelativeLayout
+            android:id="@+id/taskMainViewRLID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:layout_marginBottom="@dimen/_1sdp"
+                android:background="@color/white"
+                android:paddingStart="@dimen/_5sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingEnd="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp">
+
+
+                <RelativeLayout
+                    android:id="@+id/deleteRLID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/bg_red_">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:paddingStart="@dimen/_8sdp"
+                        android:paddingEnd="@dimen/_8sdp"
+                        android:text="Stop"
+                        android:fontFamily="@font/roboto_regular"
+                        android:textColor="@color/red_main"
+                        android:textStyle="bold"
+                        android:paddingTop="@dimen/_4sdp"
+                        android:paddingBottom="@dimen/_4sdp"
+                        android:textSize="@dimen/_10ssp"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText" />
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    tools:ignore="UselessParent">
+
+                    <TextView
+                        android:id="@+id/taskTittleID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:padding="@dimen/_2sdp"
+                        android:text="Task Title"
+                        android:textColor="@color/edit_7"
+                        android:textSize="@dimen/_10ssp"
+                        android:visibility="gone"
+                        tools:ignore="HardcodedText" />
+
+
+                    <TextView
+                        android:id="@+id/taskTittleTVID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:padding="@dimen/_2sdp"
+                        android:text="Task Title"
+                        android:textColor="@color/bg_dark"
+                        android:textSize="@dimen/_13ssp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/taskNameID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:padding="@dimen/_2sdp"
+                        android:text="Task Name"
+                        android:textColor="@color/edit_7"
+                        android:textSize="@dimen/_10ssp"
+                        android:visibility="gone"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/taskNameTVID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:padding="@dimen/_2sdp"
+                        android:text="Task Title"
+                        android:textColor="@color/bg_dark"
+                        android:textSize="@dimen/_13ssp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                    <RelativeLayout
+                        android:id="@+id/dateTimeRLID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/cat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_regular"
+                            android:padding="@dimen/_3sdp"
+                            android:text="Category"
+                            android:textColor="@color/edit_7"
+                            android:textSize="@dimen/_10ssp"
+                            tools:ignore="HardcodedText,RelativeOverlap" />
+
+
+                        <TextView
+                            android:id="@+id/categoryID"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_regular"
+                            android:padding="@dimen/_3sdp"
+                            android:text="@string/app_name"
+                            android:layout_below="@+id/cat"
+                            android:textColor="@color/bg_dark"
+                            android:textSize="@dimen/_13ssp"
+                            android:textStyle="bold"
+                            tools:ignore="RelativeOverlap" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_below="@+id/categoryID">
+
+                            <TextView
+                                android:id="@+id/dateID"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_3sdp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:padding="@dimen/_2sdp"
+                                android:text="Date"
+                                android:textColor="@color/edit_7"
+                                android:textSize="@dimen/_10ssp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:id="@+id/dateTVID"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_regular"
+                                android:padding="@dimen/_2sdp"
+                                android:text="Task Title"
+                                android:textColor="@color/bg_dark"
+                                android:textSize="@dimen/_13ssp"
+                                android:textStyle="bold"
+                                tools:ignore="HardcodedText" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:orientation="vertical"
+                            android:layout_below="@+id/categoryID">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end"
+                                android:layout_marginTop="@dimen/_3sdp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:gravity="end"
+                                android:padding="@dimen/_2sdp"
+                                android:text="Time"
+                                android:textColor="@color/edit_7"
+                                android:textSize="@dimen/_10ssp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:id="@+id/timeTVID"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end"
+                                android:fontFamily="@font/roboto_regular"
+                                android:gravity="end"
+                                android:padding="@dimen/_2sdp"
+                                android:text="Task Title"
+                                android:textColor="@color/bg_dark"
+                                android:textSize="@dimen/_13ssp"
+                                android:textStyle="bold"
+                                tools:ignore="HardcodedText" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

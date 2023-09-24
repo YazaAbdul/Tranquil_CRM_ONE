@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    android:id="@+id/toolbar2"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_45sdp"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center"
+    android:minHeight="?attr/actionBarSize"
+    local:popupTheme="@style/AppTheme"
+    android:theme="@style/DrawerIcon"
+    app:ignore="NamespaceTypo">
+
+    <!--local:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"-->
+
+
+
+ <!--   android:src="@drawable/striplogo"-->
+
+    <ImageView
+        android:id="@+id/imagelogo"
+        android:layout_width="@dimen/_160sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_gravity="center_horizontal"
+
+        android:scaleType="fitCenter"
+        android:contentDescription="@string/app_name"
+        android:layout_marginRight="@dimen/_22sdp"
+        />
+
+    <ImageView
+        android:id="@+id/menuID"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:visibility="gone"
+        android:background="@drawable/menu"/>
+
+
+</androidx.appcompat.widget.Toolbar>

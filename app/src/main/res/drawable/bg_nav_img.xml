@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Image -->
+    <item android:drawable="@drawable/glossy" />
+
+    <!-- Rounded corner background -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/white" /> <!-- Background color -->
+            <corners android:bottomRightRadius="@dimen/_20sdp" /> <!-- Adjust the radius as needed -->
+        </shape>
+    </item>
+</layer-list>

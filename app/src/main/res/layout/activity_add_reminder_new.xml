@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@color/bg_header">
+
+        <include layout="@layout/header_attendance" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/appBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_5ssp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_60sdp"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                tools:ignore="KeyboardInaccessibleWidget">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    tools:ignore="DisableBaselineAlignment,UselessParent">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.3"
+                        android:gravity="center"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/date_icon1"
+                            android:layout_width="18dp"
+                            android:layout_height="@dimen/_18ssp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/task"
+                            android:contentDescription="@string/app_name" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1.7"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/date_text1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_regular"
+                            android:text="Task Title"
+                            android:layout_marginTop="@dimen/_7sdp"
+                            android:textColor="@color/blue"
+                            android:textSize="@dimen/_13ssp"
+                            tools:ignore="HardcodedText" />
+
+                        <EditText
+                            android:id="@+id/taskTittleETID"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:fontFamily="@font/roboto_regular"
+                            android:hint="Enter Task Title"
+                            android:inputType="text"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/edit_7"
+                            android:textSize="@dimen/_13ssp"
+                            tools:ignore="Autofill,HardcodedText,TextFields" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/edit_b" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_60sdp"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                tools:ignore="KeyboardInaccessibleWidget">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    tools:ignore="DisableBaselineAlignment,UselessParent">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.3"
+                        android:gravity="center"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:layout_width="@dimen/_18ssp"
+                            android:layout_height="@dimen/_18ssp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/task"
+                            android:contentDescription="@string/app_name" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1.7"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_regular"
+                            android:text="What is to be done ?"
+                            android:layout_marginTop="@dimen/_7sdp"
+                            android:textColor="@color/blue"
+                            android:textSize="@dimen/_13ssp"
+                            tools:ignore="HardcodedText" />
+
+                        <EditText
+                            android:id="@+id/taskNameETID"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:fontFamily="@font/roboto_regular"
+                            android:hint="Enter your Task"
+                            android:inputType="text"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/edit_7"
+                            android:textSize="@dimen/_13ssp"
+                            tools:ignore="Autofill,HardcodedText,TextFields" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/edit_b" />
+
+            <RelativeLayout
+                android:id="@+id/dateRLID"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_60sdp"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                tools:ignore="KeyboardInaccessibleWidget">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    tools:ignore="DisableBaselineAlignment,UselessParent">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.3"
+                        android:gravity="center"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/date_icon"
+                            android:layout_width="@dimen/_18ssp"
+                            android:layout_height="@dimen/_18ssp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/cal_"
+                            android:contentDescription="@string/app_name" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1.7"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/date_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_regular"
+                            android:text="@string/date"
+                            android:textColor="@color/blue"
+                            android:textSize="@dimen/_13ssp" />
+
+                        <TextView
+                            android:id="@+id/set_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_regular"
+                            android:textColor="@color/edit_7"
+                            android:textSize="@dimen/_13ssp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/edit_b" />
+
+            <RelativeLayout
+                android:id="@+id/timeRLID"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_60sdp"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                tools:ignore="KeyboardInaccessibleWidget">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    tools:ignore="DisableBaselineAlignment,UselessParent">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.3"
+                        android:gravity="center"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/time_icon"
+                            android:layout_width="@dimen/_18ssp"
+                            android:layout_height="@dimen/_18ssp"
+                            android:background="@drawable/time_"
+                            android:backgroundTint="@color/black"
+                            android:contentDescription="@string/app_name"
+                            tools:ignore="UnusedAttribute" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1.7"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/time_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_regular"
+                            android:text="@string/time"
+                            android:textColor="@color/blue"
+                            android:textSize="@dimen/_13ssp" />
+
+                        <TextView
+                            android:id="@+id/set_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_regular"
+                            android:textColor="@color/edit_7"
+                            android:textSize="@dimen/_13ssp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/edit_b" />
+
+            <RelativeLayout
+                android:id="@+id/repeatRLID"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_60sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    tools:ignore="DisableBaselineAlignment,UselessParent">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.3"
+                        android:gravity="center"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/repeat_icon"
+                            android:layout_width="@dimen/_18ssp"
+                            android:layout_height="@dimen/_18ssp"
+                            android:background="@drawable/repeat_i"
+                            android:backgroundTint="@color/black"
+                            android:contentDescription="@string/app_name"
+                            tools:ignore="UnusedAttribute" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1.7"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_regular"
+                            android:text="@string/repeat"
+                            android:textColor="@color/blue"
+                            android:textSize="@dimen/_13ssp" />
+
+                        <TextView
+                            android:id="@+id/set_repeat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_regular"
+                            android:textColor="@color/edit_7"
+                            android:textSize="@dimen/_13ssp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Switch
+                    android:id="@+id/repeat_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="16dp"
+                    android:checked="true"
+                    android:textOff="Off"
+                    android:textOn="On"
+                    android:visibility="gone"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/edit_b" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_60sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    tools:ignore="DisableBaselineAlignment,UselessParent">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.3"
+                        android:gravity="center"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:layout_width="@dimen/_18ssp"
+                            android:layout_height="@dimen/_18ssp"
+                            android:background="@drawable/types"
+                            android:backgroundTint="@color/black"
+                            android:contentDescription="@string/app_name"
+                            tools:ignore="UnusedAttribute" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.4"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:fontFamily="@font/roboto_regular"
+                            android:text="Add to category"
+                            android:textColor="@color/blue"
+                            android:textSize="@dimen/_13ssp"
+                            tools:ignore="HardcodedText" />
+
+                        <Spinner
+                            android:id="@+id/categorySPID"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_marginTop="@dimen/_3sdp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.3"
+                        android:gravity="center"
+                        tools:ignore="UselessParent">
+
+                        <RelativeLayout
+                            android:id="@+id/addCategoryRLID"
+                            android:layout_width="@dimen/_28sdp"
+                            android:layout_height="@dimen/_28sdp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/bg_circle_ripple"
+                            android:gravity="center">
+
+
+                            <ImageView
+                                android:layout_width="@dimen/_18ssp"
+                                android:layout_height="@dimen/_18ssp"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/add_d"
+                                android:backgroundTint="@color/black"
+                                android:contentDescription="@string/app_name"
+                                tools:ignore="UnusedAttribute" />
+
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/edit_b" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

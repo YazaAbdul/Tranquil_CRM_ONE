@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textviewsize">65sp</dimen>
+    <dimen name="subtextviewsize">23sp</dimen>
+    <dimen name="dateTextsize">29sp</dimen>
+</resources>

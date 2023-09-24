@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/trackID"
+        android:checked="false"
+        android:icon="@drawable/pending"
+        android:title="Pending"
+        app:showAsAction="ifRoom"
+        tools:ignore="HardcodedText" />
+
+    <item
+        android:id="@+id/updateID"
+        android:checked="false"
+        android:icon="@drawable/completed"
+        android:title="Complete"
+        app:showAsAction="ifRoom"
+        tools:ignore="HardcodedText"/>
+
+    <item
+        android:id="@+id/completeID"
+        android:checked="false"
+        android:icon="@drawable/hold"
+        android:title="Hold"
+        app:showAsAction="ifRoom"
+        tools:ignore="HardcodedText" />
+
+</menu>

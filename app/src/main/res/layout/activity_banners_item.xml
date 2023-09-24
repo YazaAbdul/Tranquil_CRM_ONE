@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/bannerCVID"
+        android:layout_width="@dimen/_230sdp"
+        android:layout_height="@dimen/_120sdp"
+        android:layout_marginStart="@dimen/_3sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:layout_marginEnd="@dimen/_3sdp"
+        android:layout_marginBottom="@dimen/_3sdp"
+
+        app:cardCornerRadius="@dimen/_4sdp"
+        app:cardElevation="@dimen/_3sdp">
+
+        <RelativeLayout
+            android:id="@+id/bannerCardsRLID"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_gravity="center_vertical"
+            android:foreground="?selectableItemBackground"
+            android:orientation="vertical"
+            tools:ignore="UnusedAttribute,UselessParent">
+
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageViewbg"
+                android:layout_width="match_parent"
+                android:scaleType="centerCrop"
+                android:alpha="0.90"
+                android:layout_height="160dp"/>
+
+            <ImageView
+                android:id="@+id/bannerIVIID"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:backgroundTint="@color/white"
+                android:tint="@color/white"/>
+
+
+            <TextView
+                android:id="@+id/cardNameTVID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:fontFamily="@font/roboto_regular"
+                android:maxLines="1"
+                android:text="Customers"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14ssp"
+                android:visibility="visible"
+                tools:ignore="HardcodedText" />
+
+            <!--<android.support.v7.widget.AppCompatImageView
+                android:id="@+id/cardsIVID"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"/>-->
+
+
+            <!--android:background="@drawable/bg_login"
+                android:backgroundTint="#6182E8"
+                android:padding="@dimen/_2sdp"-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                tools:ignore="DisableBaselineAlignment">
+
+             <!--   <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="@dimen/_6sdp"
+                    app:cardElevation="@dimen/_2sdp">-->
+
+               <!--     <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/four"
+                        android:alpha="0.6"
+                        android:scaleType="centerCrop" />-->
+
+
+                    <LinearLayout
+                        android:id="@+id/overallLLID"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_margin="@dimen/_2sdp"
+                        android:layout_marginRight="6dp"
+                        android:background="@drawable/bg_card_"
+                        android:orientation="vertical"
+                        android:paddingStart="@dimen/_5sdp"
+                        android:paddingEnd="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_10sdp"
+                        tools:ignore="TooDeepLayout">
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/overallIVID"
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/overall"
+                                android:backgroundTint="@color/white" />
+
+                            <TextView
+                                android:id="@+id/activeTVID"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:fontFamily="@font/roboto_medium"
+                                android:maxLines="1"
+                                android:layout_toEndOf="@+id/overallIVID"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:text="Active"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_10ssp"
+                                tools:ignore="HardcodedText" />
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/activeLogicTVID"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_medium"
+                            android:maxLines="1"
+                            android:text="526"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_10ssp"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            tools:ignore="HardcodedText" />
+
+
+                    </LinearLayout>
+
+              <!--  </androidx.cardview.widget.CardView>-->
+
+               <!-- <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:layout_weight="1"
+
+                    app:cardCornerRadius="@dimen/_6sdp"
+                    app:cardElevation="@dimen/_2sdp">-->
+                    <!--<androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/two"
+                        android:alpha="0.6"
+                        android:scaleType="centerCrop" />-->
+
+                    <LinearLayout
+                        android:id="@+id/todayLLID"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_margin="@dimen/_2sdp"
+                        android:layout_marginRight="6dp"
+                        android:background="@drawable/bg_card_"
+                        android:orientation="vertical"
+                        android:paddingStart="@dimen/_5sdp"
+                        android:paddingEnd="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_10sdp"
+                        tools:ignore="TooDeepLayout">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/todayIVID"
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/today"
+                                android:backgroundTint="@color/white" />
+
+                            <TextView
+                                android:id="@+id/dayTVID"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:layout_toEndOf="@+id/todayIVID"
+                                android:fontFamily="@font/roboto_regular"
+                                android:maxLines="1"
+                                android:text="Day"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_10ssp"
+                                tools:ignore="HardcodedText" />
+
+                        </RelativeLayout>
+
+
+                        <TextView
+                            android:id="@+id/dayLogicTVID"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:fontFamily="@font/roboto_medium"
+                            android:maxLines="1"
+                            android:text="026"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_10ssp"
+                            tools:ignore="HardcodedText" />
+
+                        <!--<TextView
+                            android:id="@+id/monthTVID"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:maxLines="1"
+                            android:textSize="@dimen/_11ssp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:text="Month"
+                            android:fontFamily="@font/roboto_regular"
+                            tools:ignore="HardcodedText" />-->
+
+                        <!--<TextView
+                            android:id="@+id/monthLogicTVID"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12ssp"
+                            android:maxLines="1"
+                            android:text="125"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:fontFamily="@font/roboto_medium"
+                            tools:ignore="HardcodedText" />-->
+
+
+                    </LinearLayout>
+
+               <!-- </androidx.cardview.widget.CardView>-->
+
+
+             <!--   <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/_2sdp"
+
+
+                    app:cardCornerRadius="@dimen/_6sdp"
+                    app:cardElevation="@dimen/_2sdp">-->
+               <!--     <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/three"
+                        android:alpha="0.6"
+                        android:scaleType="centerCrop" />-->
+
+                    <LinearLayout
+                        android:id="@+id/monthLLID"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_margin="@dimen/_2sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_card_"
+                        android:orientation="vertical"
+                        android:paddingStart="@dimen/_5sdp"
+                        android:paddingEnd="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_10sdp"
+                        tools:ignore="TooDeepLayout">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/monthIVID"
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/month"
+                                android:backgroundTint="@color/white" />
+
+                            <TextView
+                                android:id="@+id/monthTVID"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:layout_toEndOf="@+id/monthIVID"
+                                android:fontFamily="@font/roboto_regular"
+                                android:maxLines="1"
+                                android:text="Month"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_10ssp"
+                                tools:ignore="HardcodedText" />
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/monthLogicTVID"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:fontFamily="@font/roboto_medium"
+                            android:maxLines="1"
+                            android:text="125"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_10ssp"
+                            tools:ignore="HardcodedText" />
+
+
+                    </LinearLayout>
+
+              <!--  </androidx.cardview.widget.CardView>-->
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    android:orientation="vertical"
+                    android:paddingStart="@dimen/_5sdp"
+                    android:paddingEnd="@dimen/_5sdp"
+                    android:visibility="gone"
+                    tools:ignore="TooDeepLayout">
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

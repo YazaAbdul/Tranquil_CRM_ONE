@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activities.dashboard.DashBoardCustomerMeetActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/header_attendance" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:paddingStart="@dimen/_28sdp"
+        android:paddingEnd="@dimen/_28sdp"
+        android:paddingBottom="@dimen/_10sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="UselessParent"
+            android:layout_marginTop="@dimen/_80sdp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                tools:ignore="UselessParent">
+
+                <LinearLayout
+                    android:id="@+id/startActiveBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_43sdp"
+                    android:background="@drawable/bg_active"
+                    android:elevation="@dimen/_2sdp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    tools:ignore="HardcodedText">
+
+                    <ImageView
+                        android:layout_width="@dimen/_18sdp"
+                        android:layout_height="@dimen/_18sdp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/start"
+                        android:backgroundTint="@color/white"
+                        android:contentDescription="@string/app_name" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:gravity="center"
+                        android:text="Start Point"
+                        android:textSize="@dimen/_12ssp"
+                        android:textColor="@color/white" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/startDisActiveBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_43sdp"
+                    android:background="@drawable/bg_dis_active"
+                    android:elevation="@dimen/_2sdp"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:orientation="horizontal"
+                    tools:ignore="HardcodedText">
+
+                    <ImageView
+                        android:layout_width="@dimen/_18sdp"
+                        android:layout_height="@dimen/_18sdp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/start"
+                        android:backgroundTint="@color/black_n"
+                        android:contentDescription="@string/app_name" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:gravity="center"
+                        android:text="Start Point"
+                        android:textSize="@dimen/_12ssp"
+                        android:textColor="@color/black_n" />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <!--meetingActiveBtn,meetingDisActiveBtn-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                tools:ignore="UselessParent">
+
+                <LinearLayout
+                    android:id="@+id/meetingActiveBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_43sdp"
+                    android:background="@drawable/bg_active"
+                    android:elevation="@dimen/_2sdp"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:orientation="horizontal"
+                    tools:ignore="HardcodedText">
+
+                    <ImageView
+                        android:layout_width="@dimen/_18sdp"
+                        android:layout_height="@dimen/_18sdp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/meet"
+                        android:backgroundTint="@color/white"
+                        android:contentDescription="@string/app_name" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:gravity="center"
+                        android:text="Meeting Point"
+                        android:textSize="@dimen/_12ssp"
+                        android:textColor="@color/white" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/meetingDisActiveBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_43sdp"
+                    android:background="@drawable/bg_dis_active"
+                    android:elevation="@dimen/_2sdp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    tools:ignore="HardcodedText">
+
+                    <ImageView
+                        android:layout_width="@dimen/_18sdp"
+                        android:layout_height="@dimen/_18sdp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/meet"
+                        android:backgroundTint="@color/black_n"
+                        android:contentDescription="@string/app_name" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:gravity="center"
+                        android:text="Meeting Point"
+                        android:textSize="@dimen/_12ssp"
+                        android:textColor="@color/black_n" />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <!--endActiveBtn,endDisActiveBtn-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                tools:ignore="UselessParent">
+
+                <LinearLayout
+                    android:id="@+id/endActiveBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_43sdp"
+                    android:background="@drawable/bg_active"
+                    android:elevation="@dimen/_2sdp"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:orientation="horizontal"
+                    tools:ignore="HardcodedText">
+
+                    <ImageView
+                        android:layout_width="@dimen/_18sdp"
+                        android:layout_height="@dimen/_18sdp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/end"
+                        android:backgroundTint="@color/white"
+                        android:contentDescription="@string/app_name" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:gravity="center"
+                        android:text="End Point"
+                        android:textSize="@dimen/_12ssp"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/endDisActiveBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_43sdp"
+                    android:background="@drawable/bg_dis_active"
+                    android:elevation="@dimen/_2sdp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    tools:ignore="HardcodedText">
+
+                    <ImageView
+                        android:layout_width="@dimen/_18sdp"
+                        android:layout_height="@dimen/_18sdp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/end"
+                        android:backgroundTint="@color/black_n"
+                        android:contentDescription="@string/app_name" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:gravity="center"
+                        android:text="End Point"
+                        android:textSize="@dimen/_12ssp"
+                        android:textColor="@color/black_n" />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

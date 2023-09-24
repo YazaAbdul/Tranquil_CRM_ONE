@@ -1,0 +1,1883 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/headerABLID"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@drawable/bg_gradient_main">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/backRLID"
+                android:layout_width="52dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/ic_backarrow"
+                    android:backgroundTint="@color/white" />
+
+
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/backRLID"
+                android:fontFamily="@font/roboto_regular"
+                android:text="Create Day Report"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14ssp"
+                tools:ignore="HardcodedText" />
+
+        </RelativeLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <include layout="@layout/header_attendance"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/dayReportRVID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <RelativeLayout
+
+        android:id="@+id/RLID"
+        android:layout_below="@+id/headerABLID"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+
+        <WebView
+            android:id="@+id/webweview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp" />
+
+    </RelativeLayout>
+    <ProgressBar
+        android:id="@+id/pb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:visibility="gone"
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="UselessParent">
+
+            <LinearLayout
+                android:id="@+id/mainView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="ContentDescription"
+                android:orientation="vertical">
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="@dimen/_10sdp"
+
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="100"
+
+                        >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="70"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="@dimen/_20sdp"
+                                android:textSize="@dimen/_18sdp"
+                                android:textColor="@color/black"
+                                android:text="FB Group Posts"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="15"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_18sdp"
+                                android:textColor="@color/black"
+                                android:text="5"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="15">
+                            <EditText
+                                android:id="@+id/facebookEDTV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:inputType="number"
+                                android:textSize="@dimen/_18sdp"
+                                android:maxLength="3"
+                                android:hint=" 5 "/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="100"
+
+                        >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="70"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="@dimen/_20sdp"
+                                android:textSize="@dimen/_18sdp"
+                                android:textColor="@color/black"
+                                android:text="Whatsapp Posts"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="15"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_18sdp"
+                                android:textColor="@color/black"
+                                android:text="20"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="15">
+                            <EditText
+                                android:id="@+id/WhatsappPostsEDTV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:inputType="number"
+                                android:textSize="@dimen/_18sdp"
+                                android:maxLength="3"
+                                android:hint=" 5 "/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="100"
+
+                        >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="70"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="@dimen/_20sdp"
+                                android:textSize="@dimen/_18sdp"
+                                android:textColor="@color/black"
+                                android:text="Channel Partner"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="15"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_18sdp"
+                                android:textColor="@color/black"
+                                android:text="1"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="15">
+                            <EditText
+                                android:id="@+id/ChannelPartnerEDTV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:inputType="number"
+                                android:textSize="@dimen/_18sdp"
+                                android:maxLength="3"
+                                android:hint=" 5 "/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="100"
+
+                        >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="70"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="@dimen/_20sdp"
+                                android:textSize="@dimen/_18sdp"
+                                android:textColor="@color/black"
+                                android:text="Classified Ads"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="15"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_18sdp"
+                                android:textColor="@color/black"
+                                android:text="1"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="15">
+                            <EditText
+                                android:id="@+id/ClassifiedAdsEDTV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:inputType="number"
+                                android:textSize="@dimen/_18sdp"
+                                android:maxLength="3"
+                                android:hint=" 5 "/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="100"
+
+                        >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="70"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="@dimen/_20sdp"
+                                android:textSize="@dimen/_18sdp"
+                                android:textColor="@color/black"
+                                android:text="Google Adwords"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="15"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_18sdp"
+                                android:textColor="@color/black"
+                                android:text="11"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="15">
+                            <EditText
+                                android:id="@+id/GoogleAdwordsEDTV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:inputType="number"
+                                android:textSize="@dimen/_18sdp"
+                                android:maxLength="3"
+                                android:hint=" 5 "/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="100"
+
+                        >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="70"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="@dimen/_20sdp"
+                                android:textSize="@dimen/_18sdp"
+                                android:textColor="@color/black"
+                                android:text="Email Campaign"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="15"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_18sdp"
+                                android:textColor="@color/black"
+                                android:text="1"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="15">
+                            <EditText
+                                android:id="@+id/EmailCampaignEDTV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:inputType="number"
+                                android:textSize="@dimen/_18sdp"
+                                android:maxLength="3"
+                                android:hint=" 5 "/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="100"
+
+                        >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="70"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="@dimen/_20sdp"
+                                android:textSize="@dimen/_18sdp"
+                                android:textColor="@color/black"
+                                android:text="Facebook Ads"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="15"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_18sdp"
+                                android:textColor="@color/black"
+                                android:text="1"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="15">
+                            <EditText
+                                android:id="@+id/FacebookAdsEDTV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:inputType="number"
+                                android:textSize="@dimen/_18sdp"
+                                android:maxLength="3"
+                                android:hint=" 5 "/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="100"
+
+                        >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="70"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="@dimen/_20sdp"
+                                android:textSize="@dimen/_18sdp"
+                                android:textColor="@color/black"
+                                android:text="Link Building"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="15"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_18sdp"
+                                android:textColor="@color/black"
+                                android:text="1"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="15">
+                            <EditText
+                                android:id="@+id/LinkBuildingEDTV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:inputType="number"
+                                android:textSize="@dimen/_18sdp"
+                                android:maxLength="3"
+                                android:hint=" 5 "/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="100"
+
+                        >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="70"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="@dimen/_20sdp"
+                                android:textSize="@dimen/_18sdp"
+                                android:textColor="@color/black"
+                                android:text="Bulk SMS"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="15"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_18sdp"
+                                android:textColor="@color/black"
+                                android:text="1"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="15">
+                            <EditText
+                                android:id="@+id/BulkSMSEDTV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:inputType="number"
+                                android:textSize="@dimen/_18sdp"
+                                android:maxLength="3"
+                                android:hint=" 5 "/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="100"
+
+                        >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="70"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="@dimen/_20sdp"
+                                android:textSize="@dimen/_18sdp"
+                                android:textColor="@color/black"
+                                android:text="Property Shows"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="15"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_18sdp"
+                                android:textColor="@color/black"
+                                android:text="1"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="15">
+                            <EditText
+                                android:id="@+id/PropertyShowsEDTV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:inputType="number"
+                                android:textSize="@dimen/_18sdp"
+                                android:maxLength="3"
+                                android:hint=" 5 "/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="100"
+
+                        >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="70"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="@dimen/_20sdp"
+                                android:textSize="@dimen/_18sdp"
+                                android:textColor="@color/black"
+                                android:text="Linked iN"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="15"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_18sdp"
+                                android:textColor="@color/black"
+                                android:text="1"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="15">
+                            <EditText
+                                android:id="@+id/LinkediNEDTV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:inputType="number"
+                                android:textSize="@dimen/_18sdp"
+                                android:maxLength="3"
+                                android:hint=" 5 "/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="100"
+
+                        >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="70"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="@dimen/_20sdp"
+                                android:textSize="@dimen/_18sdp"
+                                android:textColor="@color/black"
+                                android:text="Social Posts"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="15"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_18sdp"
+                                android:textColor="@color/black"
+                                android:text="111"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="15">
+                            <EditText
+                                android:id="@+id/SocialPostsEDTV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:inputType="number"
+                                android:textSize="@dimen/_18sdp"
+                                android:maxLength="3"
+                                android:hint=" 5 "/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="100"
+
+                        >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="70"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="@dimen/_20sdp"
+                                android:textSize="@dimen/_18sdp"
+                                android:textColor="@color/black"
+                                android:text="Data Update"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="15"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_18sdp"
+                                android:textColor="@color/black"
+                                android:text="1"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="15">
+                            <EditText
+                                android:id="@+id/DataUpdateEDTV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:inputType="number"
+                                android:textSize="@dimen/_18sdp"
+                                android:maxLength="3"
+                                android:hint=" 5 "/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="100"
+
+                        >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="70"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="@dimen/_20sdp"
+                                android:textSize="@dimen/_18sdp"
+                                android:textColor="@color/black"
+                                android:text="Social Boosting"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="15"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_18sdp"
+                                android:textColor="@color/black"
+                                android:text="1"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="15">
+                            <EditText
+                                android:id="@+id/SocialBoostingEDTV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:inputType="number"
+                                android:textSize="@dimen/_18sdp"
+                                android:maxLength="3"
+                                android:hint=" 5 "/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="100"
+
+                        >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="70"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="@dimen/_20sdp"
+                                android:textSize="@dimen/_18sdp"
+                                android:textColor="@color/black"
+                                android:text="Smart Boosting"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="15"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_18sdp"
+                                android:textColor="@color/black"
+                                android:text="1"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="15">
+                            <EditText
+                                android:id="@+id/SmartBoostingEDTV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:inputType="number"
+                                android:textSize="@dimen/_18sdp"
+                                android:maxLength="3"
+                                android:hint=" 5 "/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+                 <!--   <RelativeLayout
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:elevation="@dimen/_2sdp"
+                        >
+
+                        <RelativeLayout
+                            android:id="@+id/fbgrouppostsIVID"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_centerVertical="true"
+                            android:visibility="visible"
+                            android:layout_marginStart="@dimen/_5sdp">
+
+                            &lt;!&ndash;                            <ImageView&ndash;&gt;
+                            &lt;!&ndash;                                android:layout_width="@dimen/_15sdp"&ndash;&gt;
+                            &lt;!&ndash;                                android:layout_height="@dimen/_15sdp"&ndash;&gt;
+                            &lt;!&ndash;                                android:layout_centerInParent="true"&ndash;&gt;
+                            &lt;!&ndash;                                android:background="@drawable/new_businessman"&ndash;&gt;
+                            &lt;!&ndash;                                android:backgroundTint="@color/bg_dark"&ndash;&gt;
+                            &lt;!&ndash;                                android:contentDescription="@string/app_name"/>&ndash;&gt;
+
+                        </RelativeLayout>
+
+  <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/fbgruouppostlayout"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:hint="FB Group Posts"
+                            android:textColorHint="@color/edit_7"
+                            android:textSize="@dimen/_12ssp"
+                            android:orientation="vertical"
+
+                            tools:ignore="HardcodedText">
+
+
+
+                            &lt;!&ndash; <ImageView
+                                 android:layout_width="@dimen/_15sdp"
+                                 android:layout_height="@dimen/_15sdp"
+                                 android:layout_centerInParent="true"
+                                 android:background="@drawable/new_businessman"
+                                 android:backgroundTint="@color/bg_dark"
+                                 android:contentDescription="@string/app_name"/>&ndash;&gt;
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/fbgruouppostETID"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_35sdp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:inputType="textPersonName"
+                                android:maxLines="1"
+                                android:padding="3dp"
+                                android:autofillHints="null"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black"
+                                android:textSize="@dimen/_12ssp"
+                                android:textStyle="normal" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:elevation="@dimen/_2sdp"
+                        >
+
+                        <RelativeLayout
+                            android:id="@+id/WhatsappPostsIVID"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_centerVertical="true"
+                            android:visibility="visible"
+                            android:layout_marginStart="@dimen/_5sdp">
+
+                                                    android:contentDescription="@string/app_name"/>&ndash;&gt;
+
+                        </RelativeLayout>
+
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/WhatsappPostslayout"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:hint="Whatsapp Posts"
+                            android:textColorHint="@color/edit_7"
+                            android:textSize="@dimen/_12ssp"
+                            android:orientation="vertical"
+
+                            tools:ignore="HardcodedText">
+
+
+
+
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/WhatsappPostsETID"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_35sdp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:inputType="textPersonName"
+                                android:maxLines="1"
+                                android:padding="3dp"
+                                android:autofillHints="null"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black"
+                                android:textSize="@dimen/_12ssp"
+                                android:textStyle="normal" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:elevation="@dimen/_2sdp"
+                        >
+
+                        <RelativeLayout
+                            android:id="@+id/ChannelPartnerIVID"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_centerVertical="true"
+                            android:visibility="visible"
+                            android:layout_marginStart="@dimen/_5sdp">
+
+                            android:contentDescription="@string/app_name"/>&ndash;&gt;
+
+                        </RelativeLayout>
+
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/ChannelPartnerlayout"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:hint="Channel Partner"
+                            android:textColorHint="@color/edit_7"
+                            android:textSize="@dimen/_12ssp"
+                            android:orientation="vertical"
+
+                            tools:ignore="HardcodedText">
+
+
+
+
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/ChannelPartnerETID"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_35sdp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:inputType="textPersonName"
+                                android:maxLines="1"
+                                android:padding="3dp"
+                                android:autofillHints="null"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black"
+                                android:textSize="@dimen/_12ssp"
+                                android:textStyle="normal" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:elevation="@dimen/_2sdp"
+                        >
+
+                        <RelativeLayout
+                            android:id="@+id/ClassifiedAdsIVID"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_centerVertical="true"
+                            android:visibility="visible"
+                            android:layout_marginStart="@dimen/_5sdp">
+
+                            android:contentDescription="@string/app_name"/>&ndash;&gt;
+
+                        </RelativeLayout>
+
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/ClassifiedAdslayout"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:hint="Classified Ads"
+                            android:textColorHint="@color/edit_7"
+                            android:textSize="@dimen/_12ssp"
+                            android:orientation="vertical"
+
+                            tools:ignore="HardcodedText">
+
+
+
+
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/ClassifiedAdsETID"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_35sdp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:inputType="textPersonName"
+                                android:maxLines="1"
+                                android:padding="3dp"
+                                android:autofillHints="null"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black"
+                                android:textSize="@dimen/_12ssp"
+                                android:textStyle="normal" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:elevation="@dimen/_2sdp"
+                        >
+
+                        <RelativeLayout
+                            android:id="@+id/GoogleAdwordsIVID"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_centerVertical="true"
+                            android:visibility="visible"
+                            android:layout_marginStart="@dimen/_5sdp">
+
+                            android:contentDescription="@string/app_name"/>&ndash;&gt;
+
+                        </RelativeLayout>
+
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/GoogleAdwordslayout"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:hint="Google Adwords"
+                            android:textColorHint="@color/edit_7"
+                            android:textSize="@dimen/_12ssp"
+                            android:orientation="vertical"
+
+                            tools:ignore="HardcodedText">
+
+
+
+
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/GoogleAdwordsETID"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_35sdp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:inputType="textPersonName"
+                                android:maxLines="1"
+                                android:padding="3dp"
+                                android:autofillHints="null"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black"
+                                android:textSize="@dimen/_12ssp"
+                                android:textStyle="normal" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:elevation="@dimen/_2sdp"
+                        >
+
+                        <RelativeLayout
+                            android:id="@+id/EmailCampaignIVID"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_centerVertical="true"
+                            android:visibility="visible"
+                            android:layout_marginStart="@dimen/_5sdp">
+
+                            android:contentDescription="@string/app_name"/>&ndash;&gt;
+
+                        </RelativeLayout>
+
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/EmailCampaignlayout"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:hint="Email Campaign"
+                            android:textColorHint="@color/edit_7"
+                            android:textSize="@dimen/_12ssp"
+                            android:orientation="vertical"
+
+                            tools:ignore="HardcodedText">
+
+
+
+
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/EmailCampaignETID"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_35sdp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:inputType="textPersonName"
+                                android:maxLines="1"
+                                android:padding="3dp"
+                                android:autofillHints="null"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black"
+                                android:textSize="@dimen/_12ssp"
+                                android:textStyle="normal" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:elevation="@dimen/_2sdp"
+                        >
+
+                        <RelativeLayout
+                            android:id="@+id/FacebookAdsIVID"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_centerVertical="true"
+                            android:visibility="visible"
+                            android:layout_marginStart="@dimen/_5sdp">
+
+                            android:contentDescription="@string/app_name"/>&ndash;&gt;
+
+                        </RelativeLayout>
+
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/FacebookAdslayout"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:hint="Facebook Ads"
+                            android:textColorHint="@color/edit_7"
+                            android:textSize="@dimen/_12ssp"
+                            android:orientation="vertical"
+
+                            tools:ignore="HardcodedText">
+
+
+
+
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/FacebookAdsETID"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_35sdp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:inputType="textPersonName"
+                                android:maxLines="1"
+                                android:padding="3dp"
+                                android:autofillHints="null"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black"
+                                android:textSize="@dimen/_12ssp"
+                                android:textStyle="normal" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:elevation="@dimen/_2sdp"
+                        >
+
+                        <RelativeLayout
+                            android:id="@+id/LinkBuildingIVID"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_centerVertical="true"
+                            android:visibility="visible"
+                            android:layout_marginStart="@dimen/_5sdp">
+
+                            android:contentDescription="@string/app_name"/>&ndash;&gt;
+
+                        </RelativeLayout>
+
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/LinkBuildinglayout"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:hint="Link Building"
+                            android:textColorHint="@color/edit_7"
+                            android:textSize="@dimen/_12ssp"
+                            android:orientation="vertical"
+
+                            tools:ignore="HardcodedText">
+
+
+
+
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/LinkBuildingETID"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_35sdp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:inputType="textPersonName"
+                                android:maxLines="1"
+                                android:padding="3dp"
+                                android:autofillHints="null"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black"
+                                android:textSize="@dimen/_12ssp"
+                                android:textStyle="normal" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:elevation="@dimen/_2sdp"
+                        >
+
+                        <RelativeLayout
+                            android:id="@+id/BulkSMSIVID"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_centerVertical="true"
+                            android:visibility="visible"
+                            android:layout_marginStart="@dimen/_5sdp">
+
+                            android:contentDescription="@string/app_name"/>&ndash;&gt;
+
+                        </RelativeLayout>
+
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/BulkSMSlayout"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:hint="Bulk SMS"
+                            android:textColorHint="@color/edit_7"
+                            android:textSize="@dimen/_12ssp"
+                            android:orientation="vertical"
+
+                            tools:ignore="HardcodedText">
+
+
+
+
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/BulkSMSETID"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_35sdp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:inputType="textPersonName"
+                                android:maxLines="1"
+                                android:padding="3dp"
+                                android:autofillHints="null"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black"
+                                android:textSize="@dimen/_12ssp"
+                                android:textStyle="normal" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:elevation="@dimen/_2sdp"
+                        >
+
+                        <RelativeLayout
+                            android:id="@+id/PropertyShowsIVID"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_centerVertical="true"
+                            android:visibility="visible"
+                            android:layout_marginStart="@dimen/_5sdp">
+
+                            android:contentDescription="@string/app_name"/>&ndash;&gt;
+
+                        </RelativeLayout>
+
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/PropertyShowslayout"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:hint="Property Shows"
+                            android:textColorHint="@color/edit_7"
+                            android:textSize="@dimen/_12ssp"
+                            android:orientation="vertical"
+
+                            tools:ignore="HardcodedText">
+
+
+
+
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/PropertyShowsETID"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_35sdp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:inputType="textPersonName"
+                                android:maxLines="1"
+                                android:padding="3dp"
+                                android:autofillHints="null"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black"
+                                android:textSize="@dimen/_12ssp"
+                                android:textStyle="normal" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:elevation="@dimen/_2sdp"
+                        >
+
+                        <RelativeLayout
+                            android:id="@+id/LinkediNIVID"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_centerVertical="true"
+                            android:visibility="visible"
+                            android:layout_marginStart="@dimen/_5sdp">
+
+                            android:contentDescription="@string/app_name"/>&ndash;&gt;
+
+                        </RelativeLayout>
+
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/LinkediNlayout"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:hint="Linked iN"
+                            android:textColorHint="@color/edit_7"
+                            android:textSize="@dimen/_12ssp"
+                            android:orientation="vertical"
+
+                            tools:ignore="HardcodedText">
+
+
+
+
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/LinkediNETID"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_35sdp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:inputType="textPersonName"
+                                android:maxLines="1"
+                                android:padding="3dp"
+                                android:autofillHints="null"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black"
+                                android:textSize="@dimen/_12ssp"
+                                android:textStyle="normal" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:elevation="@dimen/_2sdp"
+                        >
+
+                        <RelativeLayout
+                            android:id="@+id/SocialPostsIVID"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_centerVertical="true"
+                            android:visibility="visible"
+                            android:layout_marginStart="@dimen/_5sdp">
+
+                            android:contentDescription="@string/app_name"/>&ndash;&gt;
+
+                        </RelativeLayout>
+
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/SocialPostslayout"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:hint="Social Posts"
+                            android:textColorHint="@color/edit_7"
+                            android:textSize="@dimen/_12ssp"
+                            android:orientation="vertical"
+
+                            tools:ignore="HardcodedText">
+
+
+
+
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/SocialPostsETID"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_35sdp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:inputType="textPersonName"
+                                android:maxLines="1"
+                                android:padding="3dp"
+                                android:autofillHints="null"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black"
+                                android:textSize="@dimen/_12ssp"
+                                android:textStyle="normal" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:elevation="@dimen/_2sdp"
+                        >
+
+                        <RelativeLayout
+                            android:id="@+id/DataUpdateIVID"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_centerVertical="true"
+                            android:visibility="visible"
+                            android:layout_marginStart="@dimen/_5sdp">
+
+                            android:contentDescription="@string/app_name"/>&ndash;&gt;
+
+                        </RelativeLayout>
+
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/DataUpdatelayout"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:hint="Data Update"
+                            android:textColorHint="@color/edit_7"
+                            android:textSize="@dimen/_12ssp"
+                            android:orientation="vertical"
+
+                            tools:ignore="HardcodedText">
+
+
+
+
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/DataUpdateETID"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_35sdp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:inputType="textPersonName"
+                                android:maxLines="1"
+                                android:padding="3dp"
+                                android:autofillHints="null"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black"
+                                android:textSize="@dimen/_12ssp"
+                                android:textStyle="normal" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:elevation="@dimen/_2sdp"
+                        >
+
+                        <RelativeLayout
+                            android:id="@+id/SocialBoostingIVID"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_centerVertical="true"
+                            android:visibility="visible"
+                            android:layout_marginStart="@dimen/_5sdp">
+
+                            android:contentDescription="@string/app_name"/>&ndash;&gt;
+
+                        </RelativeLayout>
+
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/SocialBoostinglayout"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:hint="Social Boosting"
+                            android:textColorHint="@color/edit_7"
+                            android:textSize="@dimen/_12ssp"
+                            android:orientation="vertical"
+
+                            tools:ignore="HardcodedText">
+
+
+
+
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/SocialBoostingETID"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_35sdp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:inputType="textPersonName"
+                                android:maxLines="1"
+                                android:padding="3dp"
+                                android:autofillHints="null"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black"
+                                android:textSize="@dimen/_12ssp"
+                                android:textStyle="normal" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:elevation="@dimen/_2sdp"
+                        >
+
+                        <RelativeLayout
+                            android:id="@+id/SmartBoostingIVID"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_centerVertical="true"
+                            android:visibility="visible"
+                            android:layout_marginStart="@dimen/_5sdp">
+
+                            android:contentDescription="@string/app_name"/>&ndash;&gt;
+
+                        </RelativeLayout>
+
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/SmartBoostinglayout"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:hint="Smart Boosting"
+                            android:textColorHint="@color/edit_7"
+                            android:textSize="@dimen/_12ssp"
+                            android:orientation="vertical"
+
+                            tools:ignore="HardcodedText">
+
+
+
+
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/SmartBoostingETID"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_35sdp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:inputType="textPersonName"
+                                android:maxLines="1"
+                                android:padding="3dp"
+                                android:autofillHints="null"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black"
+                                android:textSize="@dimen/_12ssp"
+                                android:textStyle="normal" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                    </RelativeLayout>-->
+
+                    <Button
+                        android:id="@+id/completeActBtn"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:background="@drawable/bg_all_btn"
+                        android:backgroundTint="@color/blue"
+                        android:gravity="center"
+                        android:text="Submit"
+                        android:textColor="@color/white"
+                        tools:ignore="HardcodedText" />
+
+
+                </LinearLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_above="@+id/submitBTID"
+        android:layout_below="@+id/headerABLID"
+
+        >
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/createDayReportRVID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/submitBTID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center|right"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="13dp"
+        android:text="submit"
+        android:textSize="10dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/noDataTVID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/edit_b"
+        android:fontFamily="@font/roboto_bold"
+        android:textSize="@dimen/_14ssp"
+        android:text="No Data Available"
+        android:visibility="gone"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>

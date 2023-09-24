@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item
+        android:id="@+id/new_game"
+        android:icon="@drawable/delete"
+        android:showAsAction="ifRoom"
+        android:title="Delete"
+        tools:ignore="AppCompatResource" />
+    <item
+        android:id="@+id/help"
+        android:icon="@drawable/delete"
+        android:title="Hide" />
+</menu>

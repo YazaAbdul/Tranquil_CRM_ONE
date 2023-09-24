@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#F7F7F7</color>
+    <color name="colorPrimaryDark">#F7F7F7</color>
+    <color name="colorAccent">#DB3935</color>
+    <color name="colorCard">#625A66</color>
+    <color name="colorHomeScreen1">#b2b2b2</color>
+    <color name="colorHomeScreen2">#b2b2b2</color>
+    <color name="textColor">#000000</color>
+    <color name="logoColor1">#5554D4</color>
+    <color name="logoColor2">#DB3935</color>
+    <color name="test">#8EA3034C</color>
+
+    <color name="gradientPrimary">#2C2C2E</color>
+    <color name="gradientSecondary">#313233</color>
+//for others
+    <color name="gradientPrimary2">#2312DC</color>
+    <color name="gradientSecondary2">#2982FA</color>
+
+    <color name="header_color">#F7F7F7</color>
+    <color name="backgroundColor">#D2D3DD</color>
+
+    <color name="tabColor">#5448cf </color>
+    <color name="logoColor">#0B2BB8</color>
+    <color name="toolBarColor">#616BA5</color>
+    <color name="toolBarColor2">#2F3A77</color>
+    <color name="colorCallButton">#5170FF</color>
+    <color name="bg_background">#F7F7F7</color>
+    <color name="bg_mainbackground">#e1d7d7</color>
+    <color name="main_bg_background">#e1d7d7 </color>
+    <color name="OrangeColor">#F75205</color>
+    <color name="colorToolBar">#f8f8f9</color>
+    <color name="color_app_2">#837675</color>
+    <color name="black">#000000</color>
+    <color name="crmtextblack">#f8585858</color>
+    <color name="white">#ffffff</color>
+    <color name="crmmailtextbgcolor">#8b8b8b</color>
+    <color name="crmmailstripbgcolor">#f5e1e1e1</color>
+    <color name="crmtaskmanaersubtextlayoutcolor">#fafafa</color>
+    <color name="crmtaskunselected">#1ef4f3f3</color>
+    <color name="colorlike">#0532a3</color>
+    <color name="colordislike">#fa2929</color>
+    <color name="toobarbgcolor">#f5f5f5</color>
+    <color name="toobariconcolor">#6e6c69</color>
+    <color name="circle_color">#000</color>
+    <color name="edittext">#747474</color>
+    <color name="accent">#78909c</color>
+    <color name="control_normal">#888888</color>
+    <color name="fab_pressed">#546e7a</color>
+    <color name="edit_b">#656565</color>
+
+    <color name="green_light1">#28EB2F</color>
+    <color name="red_light">#F41D1D</color>
+    <color name="red_main">#F65252</color>
+    <color name="green_main">#61CE65</color>
+    <color name="edit_f">#f2f2f2</color>
+    <color name="edit_f7">#EDEDED</color>
+
+
+    <color name="black_87">#DE000000</color>
+    <color name="black_70">#B3000000</color>
+    <color name="black_60">#99000000</color>
+    <color name="black_54">#8A000000</color>
+    <color name="black_50">#80000000</color>
+    <color name="black_40">#64000000</color>
+    <color name="black_38">#61000000</color>
+    <color name="black_32">#52000000</color>
+    <color name="black_20">#33000000</color>
+    <color name="black_12">#1F000000</color>
+    <color name="white_90">#E6FFFFFF</color>
+    <color name="white_70">#B3FFFFFF</color>
+    <color name="white_50">#80FFFFFF</color>
+    <color name="white_40">#64FFFFFF</color>
+    <color name="white_30">#4DFFFFFF</color>
+    <color name="white_20">#33FFFFFF</color>
+    <color name="white_12">#1FFFFFFF</color>
+
+    <color name="ripple_dark">@color/white_20</color>
+    <color name="ripple_light">@color/black_12</color>
+
+    <color name="splash_top">#1E5649</color>
+    <color name="splash_bottom">#222222</color>
+    <color name="edit_7">#747474</color>
+    <color name="transparent">#00000000</color>
+    <color name="shimmer_placeholder">#dddddd</color>
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#7BADE8</color>
+    <color name="dot_dark_screen2">#7BADE8</color>
+    <color name="dot_dark_screen3">#7BADE8</color>
+    <color name="dot_dark_screen4">#7BADE8</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#0075ff</color>
+    <color name="dot_light_screen2">#0075ff</color>
+    <color name="dot_light_screen3">#0075ff</color>
+    <color name="dot_light_screen4">#0075ff</color>
+
+    <color name="green">#61CE65</color>
+    <color name="blue">#0075ff</color>
+    <color name="truecaller_blue">#0086FF</color>
+    <color name="bg_header">#f8f8f9</color>
+
+    <color name="bg_dark">#060606</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+    </array>
+
+    <color name="material_light_primary_text">#DE000000</color>
+    <color name="material_light_hint_text">#61000000</color>
+    <color name="material_light_active_icon">#8A000000</color>
+    <color name="material_ripple_light">#1F000000</color>
+    <color name="divider_color">#1F000000</color>
+    <color name="active_icon_color">#8A000000</color>
+    <color name="cards_and_dialogs_color">@android:color/white</color>
+    <color name="quantum_grey_600">#757575</color>
+    <color name="black_n">#1B1C21</color>
+    <color name="black_2">#1A1B20</color>
+    <color name="tag_bg">#eee</color>
+    <color name="edit_d">#F5F5F5</color>
+    <color name="edit_4">#545454</color>
+
+
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+</resources>
